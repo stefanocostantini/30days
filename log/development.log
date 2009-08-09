@@ -1,0 +1,2314 @@
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:31:05) [GET]
+  [4;36;1mItem Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: items: SELECT * FROM "items" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: items: SELECT * FROM "items" ):
+  app/controllers/items_controller.rb:5:in `index'
+
+Rendered rescues/_trace (50.9ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateItems (20090809133049)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "notes" text, "url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090809133049')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("items")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-09 14:31:26) [GET]
+
+ActionController::RoutingError (No route matches "/bits" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:31:30) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 75ms (View: 69, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 14:31:43) [GET]
+Rendering template within layouts/items
+Rendering items/new
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/items/new]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:44:22) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:45:21) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:47:00) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-09 14:47:09) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Eclipse (Twilight Saga): Amazon.co.uk: Stephenie Meyer: Books", "u"=>"http://www.amazon.co.uk/gp/product/1904233910/ref=s9_simz_gw_s0_p14_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=04WRZQFVD2NQT1425JQN&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+
+ActionController::RoutingError (No route matches "/bookmarks/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:47:33) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:47:44) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 14:47:58) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Breaking Dawn (Twilight Saga): Amazon.co.uk: Stephenie Meyer: Books", "u"=>"http://www.amazon.co.uk/gp/product/1905654286/ref=s9_simz_gw_s0_p14_i3?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=1NR04BB3WJZ9KQZ99N4B&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2F1905654286%2Fref%3Ds9_simz_gw_s0_p14_i3%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D1NR04BB3WJZ9KQZ99N4B%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294&t=Breaking%20Dawn%20(Twilight%20Saga)%3A%20Amazon.co.uk%3A%20Stephenie%20Meyer%3A%20Books&s=]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 14:50:55) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Double detail Hi: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/Converse-Taylor-Allstar-Double-detail/dp/B001PKTI5W/ref=amb_link_82553093_4?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=0QZPV6PMHV3Y3PNJJ28H&pf_rd_t=101&pf_rd_p=470291753&pf_rd_i=468294"}
+
+RuntimeError (--- !map:HashWithIndifferentAccess 
+v: "1"
+action: new
+controller: items
+s: ""
+t: "Converse Chuck Taylor Allstar Double detail Hi: Amazon.co.uk: Shoes & Accessories"
+u: http://www.amazon.co.uk/Converse-Taylor-Allstar-Double-detail/dp/B001PKTI5W/ref=amb_link_82553093_4?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=0QZPV6PMHV3Y3PNJJ28H&pf_rd_t=101&pf_rd_p=470291753&pf_rd_i=468294
+):
+  app/controllers/items_controller.rb:28:in `new'
+
+Rendered rescues/_trace (134.1ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 14:57:55) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Double detail Hi: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/Converse-Taylor-Allstar-Double-detail/dp/B001PKTI5W/ref=amb_link_82553093_4?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=0QZPV6PMHV3Y3PNJJ28H&pf_rd_t=101&pf_rd_p=470291753&pf_rd_i=468294"}
+
+NoMethodError (undefined method `title=' for #<Item:0x24a98e8>):
+  app/controllers/items_controller.rb:29:in `new'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:57:58) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 14:58:08) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse All Star Double upper: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B001PKTJ1U/ref=s9_simz_gw_s0_p309_i3?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0HWJ2HDWRRFAAPDPM2JB&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+
+NoMethodError (undefined method `title=' for #<Item:0x2321570>):
+  app/controllers/items_controller.rb:29:in `new'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:58:20) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 14:58:30) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294&t=Converse%20Chuck%20Taylor%20Allstar%20Canvas%20Hi-top%20mono%3A%20Amazon.co.uk%3A%20Shoes%20%26%20Accessories&s=]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-09 14:58:33) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwyIk8L+zaNlIGIsBQCsgKFDk3xjewTlfMKmusKNaoo=", "item"=>{"name"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294", "notes"=>"<blank...for now>"}}
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories', '2009-08-09 13:58:33', 'http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294', '<blank...for now>', '2009-08-09 13:58:33')[0m
+Redirected to http://localhost:3000/items/1
+Completed in 51ms (DB: 1) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 14:58:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 1) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/items/1]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 14:58:34) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:00:47) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+ERROR: compiling _run_erb_app47views47items47index46html46erb RAISED compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: unknown regexp options - tabl
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: syntax error, unexpected $undefined
+@output_buffer.concat "</table>\n"
+                                ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+@output_buffer.concat "<br />\n"
+                            ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: unterminated string meets end of file
+Function body:           def _run_erb_app47views47items47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing items</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "  <a href=\"javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://"; @output_buffer.concat(( request.host_with_port ).to_s); @output_buffer.concat "/items/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\\s*|\\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;\">\n"
+@output_buffer.concat "    Bookmarklet\n"
+@output_buffer.concat "  </a>\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Name</th>\n"
+@output_buffer.concat "    <th>Notes</th>\n"
+@output_buffer.concat "    <th>Url</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @items.each do |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.name ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.notes ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((link_to 'Visit page', :url => '<%=item.url).to_s); @output_buffer.concat "'</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', item ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Edit', edit_item_path(item) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New item', new_item_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28:in `compile!'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/stefanocostantini/Desktop/30days/app/controllers/items_controller.rb:7:in `index'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: unknown regexp options - tabl
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: syntax error, unexpected $undefined
+@output_buffer.concat "</table>\n"
+                                ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+@output_buffer.concat "<br />\n"
+                            ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: unterminated string meets end of file) on line #21 of app/views/items/index.html.erb:
+18:     <td><%=h item.name %></td>
+19:     <td><%=h item.notes %></td>
+20:     <td><%=link_to 'Visit page', :url => '<%=item.url%>'</td>
+21:     <td><%= link_to 'Show', item %></td>
+22:     <td><%= link_to 'Edit', edit_item_path(item) %></td>
+23:     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+24:   </tr>
+
+    app/views/items/index.html.erb:28:in `compile!'
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (53.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:01:16) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+ERROR: compiling _run_erb_app47views47items47index46html46erb RAISED compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unmatched ): /td>
+    <td><%= link_to 'Show', item ).to_s); @output_buffer.concat "</
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: unknown regexp options - tabl
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: syntax error, unexpected $undefined
+@output_buffer.concat "</table>\n"
+                                ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+@output_buffer.concat "<br />\n"
+                            ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: unterminated string meets end of file
+Function body:           def _run_erb_app47views47items47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing items</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "  <a href=\"javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://"; @output_buffer.concat(( request.host_with_port ).to_s); @output_buffer.concat "/items/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\\s*|\\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;\">\n"
+@output_buffer.concat "    Bookmarklet\n"
+@output_buffer.concat "  </a>\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Name</th>\n"
+@output_buffer.concat "    <th>Notes</th>\n"
+@output_buffer.concat "    <th>Url</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @items.each do |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.name ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.notes ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((link_to 'Visit page', :url => item.url </td>
+    <td><%= link_to 'Show', item ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Edit', edit_item_path(item) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New item', new_item_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28:in `compile!'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/stefanocostantini/Desktop/30days/app/controllers/items_controller.rb:7:in `index'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unmatched ): /td>
+    <td><%= link_to 'Show', item ).to_s); @output_buffer.concat "</
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: unknown regexp options - tabl
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: syntax error, unexpected $undefined
+@output_buffer.concat "</table>\n"
+                                ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+@output_buffer.concat "<br />\n"
+                            ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: unterminated string meets end of file) on line #21 of app/views/items/index.html.erb:
+18:     <td><%=h item.name %></td>
+19:     <td><%=h item.notes %></td>
+20:     <td><%=link_to 'Visit page', :url => item.url </td>
+21:     <td><%= link_to 'Show', item %></td>
+22:     <td><%= link_to 'Edit', edit_item_path(item) %></td>
+23:     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+24:   </tr>
+
+    app/views/items/index.html.erb:28:in `compile!'
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (142.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:01:25) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+ERROR: compiling _run_erb_app47views47items47index46html46erb RAISED compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unmatched ): /td>
+    <td><%= link_to 'Show', item ).to_s); @output_buffer.concat "</
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: unknown regexp options - tabl
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: syntax error, unexpected $undefined
+@output_buffer.concat "</table>\n"
+                                ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+@output_buffer.concat "<br />\n"
+                            ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: unterminated string meets end of file
+Function body:           def _run_erb_app47views47items47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing items</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "  <a href=\"javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://"; @output_buffer.concat(( request.host_with_port ).to_s); @output_buffer.concat "/items/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\\s*|\\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;\">\n"
+@output_buffer.concat "    Bookmarklet\n"
+@output_buffer.concat "  </a>\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Name</th>\n"
+@output_buffer.concat "    <th>Notes</th>\n"
+@output_buffer.concat "    <th>Url</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @items.each do |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.name ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.notes ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((link_to 'Visit page', :url => 'item.url' </td>
+    <td><%= link_to 'Show', item ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Edit', edit_item_path(item) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New item', new_item_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28:in `compile!'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/stefanocostantini/Desktop/30days/app/controllers/items_controller.rb:7:in `index'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unmatched ): /td>
+    <td><%= link_to 'Show', item ).to_s); @output_buffer.concat "</
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: unknown regexp options - tabl
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: syntax error, unexpected $undefined
+@output_buffer.concat "</table>\n"
+                                ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+@output_buffer.concat "<br />\n"
+                            ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: unterminated string meets end of file) on line #21 of app/views/items/index.html.erb:
+18:     <td><%=h item.name %></td>
+19:     <td><%=h item.notes %></td>
+20:     <td><%=link_to 'Visit page', :url => 'item.url' </td>
+21:     <td><%= link_to 'Show', item %></td>
+22:     <td><%= link_to 'Edit', edit_item_path(item) %></td>
+23:     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+24:   </tr>
+
+    app/views/items/index.html.erb:28:in `compile!'
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (54.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:01:49) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+ERROR: compiling _run_erb_app47views47items47index46html46erb RAISED compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:20: odd number list for Hash
+...isit page', :url => {item.url} ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47items47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing items</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "  <a href=\"javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://"; @output_buffer.concat(( request.host_with_port ).to_s); @output_buffer.concat "/items/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\\s*|\\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;\">\n"
+@output_buffer.concat "    Bookmarklet\n"
+@output_buffer.concat "  </a>\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Name</th>\n"
+@output_buffer.concat "    <th>Notes</th>\n"
+@output_buffer.concat "    <th>Url</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @items.each do |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.name ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.notes ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((link_to 'Visit page', :url => {item.url} ).to_s); @output_buffer.concat " </td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', item ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Edit', edit_item_path(item) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New item', new_item_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:33:in `compile!'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/stefanocostantini/Desktop/30days/app/controllers/items_controller.rb:7:in `index'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:20: odd number list for Hash
+...isit page', :url => {item.url} ).to_s); @output_buffer.conca...
+                              ^) on line #20 of app/views/items/index.html.erb:
+17:   <tr>
+18:     <td><%=h item.name %></td>
+19:     <td><%=h item.notes %></td>
+20:     <td><%=link_to 'Visit page', :url => {item.url} %> </td>
+21:     <td><%= link_to 'Show', item %></td>
+22:     <td><%= link_to 'Edit', edit_item_path(item) %></td>
+23:     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/items/index.html.erb:33:in `compile!'
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (145.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:01:58) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:02:03) [GET]
+  Parameters: {"url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items?url=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:02:07) [GET]
+  Parameters: {"url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items?url=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:02:08) [GET]
+  Parameters: {"url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/items?url=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:02:09) [GET]
+  Parameters: {"url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/items?url=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:02:10) [GET]
+  Parameters: {"url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items?url=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:02:53) [GET]
+  Parameters: {"url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/items?url=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:02:54) [GET]
+  Parameters: {"url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/items?url=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:06:24) [GET]
+  Parameters: {"url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/items?url=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:06:38) [GET]
+  Parameters: {"url"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/items?url=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:09:00) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+ERROR: compiling _run_erb_app47views47items47index46html46erb RAISED compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unmatched ): /td>
+    <td><%= link_to 'Show', item ).to_s); @output_buffer.concat "</
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: unknown regexp options - tabl
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: syntax error, unexpected $undefined
+@output_buffer.concat "</table>\n"
+                                ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+@output_buffer.concat "<br />\n"
+                            ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: unterminated string meets end of file
+Function body:           def _run_erb_app47views47items47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing items</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<p>\n"
+@output_buffer.concat "  <a href=\"javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://"; @output_buffer.concat(( request.host_with_port ).to_s); @output_buffer.concat "/items/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\\s*|\\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;\">\n"
+@output_buffer.concat "    Bookmarklet\n"
+@output_buffer.concat "  </a>\n"
+@output_buffer.concat "</p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Name</th>\n"
+@output_buffer.concat "    <th>Notes</th>\n"
+@output_buffer.concat "    <th>Url</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @items.each do |item| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.name ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h item.notes ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to "Visit Item page", "item.url" </td>
+    <td><%= link_to 'Show', item ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Edit', edit_item_path(item) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New item', new_item_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28:in `compile!'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/stefanocostantini/Desktop/30days/app/controllers/items_controller.rb:7:in `index'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/stefanocostantini/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: unmatched ): /td>
+    <td><%= link_to 'Show', item ).to_s); @output_buffer.concat "</
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:21: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: unknown regexp options - td
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:23: syntax error, unexpected $undefined
+... @output_buffer.concat "</td>\n"
+                              ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: unknown regexp options - tabl
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:26: syntax error, unexpected $undefined
+@output_buffer.concat "</table>\n"
+                                ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:27: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+@output_buffer.concat "<br />\n"
+                            ^
+/Users/stefanocostantini/Desktop/30days/app/views/items/index.html.erb:28: unterminated string meets end of file) on line #21 of app/views/items/index.html.erb:
+18:     <td><%=h item.name %></td>
+19:     <td><%=h item.notes %></td>
+20:     <td><%= link_to "Visit Item page", "item.url" </td>
+21:     <td><%= link_to 'Show', item %></td>
+22:     <td><%= link_to 'Edit', edit_item_path(item) %></td>
+23:     <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+24:   </tr>
+
+    app/views/items/index.html.erb:28:in `compile!'
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (53.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:09:05) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-09 15:09:08) [GET]
+
+ActionController::RoutingError (No route matches "/item.url" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-09 15:09:22) [GET]
+
+ActionController::RoutingError (No route matches "/item.url" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:09:26) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:09:55) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:14:03) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Currys - Shop for Xbox 360 software - Activision Xbox 360 Modern Warfare 2", "u"=>"http://www.currys.co.uk:80/martprd/store/cur_page.jsp?BV_SessionID=@@@@1212486315.1249827234@@@@&BV_EngineID=cccfadehmklgfelcflgceggdhhmdgmj.0&page=Product&fm=null&sm=null&tm=null&sku=192581&category_oid=-36948"}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.currys.co.uk%3A80%2Fmartprd%2Fstore%2Fcur_page.jsp%3FBV_SessionID%3D%40%40%40%401212486315.1249827234%40%40%40%40%26BV_EngineID%3Dcccfadehmklgfelcflgceggdhhmdgmj.0%26page%3DProduct%26fm%3Dnull%26sm%3Dnull%26tm%3Dnull%26sku%3D192581%26category_oid%3D-36948&t=Currys%20-%20Shop%20for%20Xbox%20360%20software%20-%20Activision%20Xbox%20360%20Modern%20Warfare%202&s=]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-09 15:14:05) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwyIk8L+zaNlIGIsBQCsgKFDk3xjewTlfMKmusKNaoo=", "item"=>{"name"=>"Currys - Shop for Xbox 360 software - Activision Xbox 360 Modern Warfare 2", "url"=>"http://www.currys.co.uk:80/martprd/store/cur_page.jsp?BV_SessionID=@@@@1212486315.1249827234@@@@&BV_EngineID=cccfadehmklgfelcflgceggdhhmdgmj.0&page=Product&fm=null&sm=null&tm=null&sku=192581&category_oid=-36948", "notes"=>"<blank...for now>"}}
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Currys - Shop for Xbox 360 software - Activision Xbox 360 Modern Warfare 2', '2009-08-09 14:14:05', 'http://www.currys.co.uk:80/martprd/store/cur_page.jsp?BV_SessionID=@@@@1212486315.1249827234@@@@&BV_EngineID=cccfadehmklgfelcflgceggdhhmdgmj.0&page=Product&fm=null&sm=null&tm=null&sku=192581&category_oid=-36948', '<blank...for now>', '2009-08-09 14:14:05')[0m
+Redirected to http://localhost:3000/items/2
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 15:14:05) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:14:07) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:15:40) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:15:51) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Currys - Shop for Xbox 360 software - Activision Xbox 360 Modern Warfare 2", "u"=>"http://www.currys.co.uk:80/martprd/store/cur_page.jsp?BV_SessionID=@@@@1212486315.1249827234@@@@&BV_EngineID=cccfadehmklgfelcflgceggdhhmdgmj.0&page=Product&fm=null&sm=null&tm=null&sku=192581&category_oid=-36948"}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.currys.co.uk%3A80%2Fmartprd%2Fstore%2Fcur_page.jsp%3FBV_SessionID%3D%40%40%40%401212486315.1249827234%40%40%40%40%26BV_EngineID%3Dcccfadehmklgfelcflgceggdhhmdgmj.0%26page%3DProduct%26fm%3Dnull%26sm%3Dnull%26tm%3Dnull%26sku%3D192581%26category_oid%3D-36948&t=Currys%20-%20Shop%20for%20Xbox%20360%20software%20-%20Activision%20Xbox%20360%20Modern%20Warfare%202&s=]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:15:51) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Currys - Shop for Xbox 360 software - Activision Xbox 360 Modern Warfare 2", "u"=>"http://www.currys.co.uk:80/martprd/store/cur_page.jsp?BV_SessionID=@@@@1212486315.1249827234@@@@&BV_EngineID=cccfadehmklgfelcflgceggdhhmdgmj.0&page=Product&fm=null&sm=null&tm=null&sku=192581&category_oid=-36948"}
+
+ArgumentError (A copy of ItemsController has been removed from the module tree but is still active!):
+  app/controllers/items_controller.rb:28:in `new'
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-09 15:16:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwyIk8L+zaNlIGIsBQCsgKFDk3xjewTlfMKmusKNaoo=", "item"=>{"name"=>"Currys - Shop for Xbox 360 software - Activision Xbox 360 Modern Warfare 2", "url"=>"http://www.currys.co.uk:80/martprd/store/cur_page.jsp?BV_SessionID=@@@@1212486315.1249827234@@@@&BV_EngineID=cccfadehmklgfelcflgceggdhhmdgmj.0&page=Product&fm=null&sm=null&tm=null&sku=192581&category_oid=-36948", "notes"=>"<blank...for now>"}}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Currys - Shop for Xbox 360 software - Activision Xbox 360 Modern Warfare 2', '2009-08-09 14:16:11', 'http://www.currys.co.uk:80/martprd/store/cur_page.jsp?BV_SessionID=@@@@1212486315.1249827234@@@@&BV_EngineID=cccfadehmklgfelcflgceggdhhmdgmj.0&page=Product&fm=null&sm=null&tm=null&sku=192581&category_oid=-36948', '<blank...for now>', '2009-08-09 14:16:11')[0m
+Redirected to http://localhost:3000/items/3
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 15:16:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:16:13) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:16:23) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Action Controller: Exception caught", "u"=>"http://localhost:3000/items/new?v=1&u=http%3A%2F%2Fwww.currys.co.uk%3A80%2Fmartprd%2Fstore%2Fcur_page.jsp%3FBV_SessionID%3D%40%40%40%401212486315.1249827234%40%40%40%40%26BV_EngineID%3Dcccfadehmklgfelcflgceggdhhmdgmj.0%26page%3DProduct%26fm%3Dnull%26sm%3Dnull%26tm%3Dnull%26sku%3D192581%26category_oid%3D-36948&t=Currys%20-%20Shop%20for%20Xbox%20360%20software%20-%20Activision%20Xbox%20360%20Modern%20Warfare%202&s="}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/items/new?v=1&u=http%3A%2F%2Flocalhost%3A3000%2Fitems%2Fnew%3Fv%3D1%26u%3Dhttp%253A%252F%252Fwww.currys.co.uk%253A80%252Fmartprd%252Fstore%252Fcur_page.jsp%253FBV_SessionID%253D%2540%2540%2540%25401212486315.1249827234%2540%2540%2540%2540%2526BV_EngineID%253Dcccfadehmklgfelcflgceggdhhmdgmj.0%2526page%253DProduct%2526fm%253Dnull%2526sm%253Dnull%2526tm%253Dnull%2526sku%253D192581%2526category_oid%253D-36948%26t%3DCurrys%2520-%2520Shop%2520for%2520Xbox%2520360%2520software%2520-%2520Activision%2520Xbox%2520360%2520Modern%2520Warfare%25202%26s%3D&t=Action%20Controller%3A%20Exception%20caught&s=]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:16:23) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Action Controller: Exception caught", "u"=>"http://localhost:3000/items/new?v=1&u=http%3A%2F%2Fwww.currys.co.uk%3A80%2Fmartprd%2Fstore%2Fcur_page.jsp%3FBV_SessionID%3D%40%40%40%401212486315.1249827234%40%40%40%40%26BV_EngineID%3Dcccfadehmklgfelcflgceggdhhmdgmj.0%26page%3DProduct%26fm%3Dnull%26sm%3Dnull%26tm%3Dnull%26sku%3D192581%26category_oid%3D-36948&t=Currys%20-%20Shop%20for%20Xbox%20360%20software%20-%20Activision%20Xbox%20360%20Modern%20Warfare%202&s="}
+Rendering template within layouts/items
+Rendering items/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/items/new?v=1&u=http%3A%2F%2Flocalhost%3A3000%2Fitems%2Fnew%3Fv%3D1%26u%3Dhttp%253A%252F%252Fwww.currys.co.uk%253A80%252Fmartprd%252Fstore%252Fcur_page.jsp%253FBV_SessionID%253D%2540%2540%2540%25401212486315.1249827234%2540%2540%2540%2540%2526BV_EngineID%253Dcccfadehmklgfelcflgceggdhhmdgmj.0%2526page%253DProduct%2526fm%253Dnull%2526sm%253Dnull%2526tm%253Dnull%2526sku%253D192581%2526category_oid%253D-36948%26t%3DCurrys%2520-%2520Shop%2520for%2520Xbox%2520360%2520software%2520-%2520Activision%2520Xbox%2520360%2520Modern%2520Warfare%25202%26s%3D&t=Action%20Controller%3A%20Exception%20caught&s=]
+
+
+Processing ItemsController#create (for 127.0.0.1 at 2009-08-09 15:16:28) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"bwyIk8L+zaNlIGIsBQCsgKFDk3xjewTlfMKmusKNaoo=", "item"=>{"name"=>"Action Controller: Exception caught", "url"=>"http://localhost:3000/items/new?v=1&u=http%3A%2F%2Fwww.currys.co.uk%3A80%2Fmartprd%2Fstore%2Fcur_page.jsp%3FBV_SessionID%3D%40%40%40%401212486315.1249827234%40%40%40%40%26BV_EngineID%3Dcccfadehmklgfelcflgceggdhhmdgmj.0%26page%3DProduct%26fm%3Dnull%26sm%3Dnull%26tm%3Dnull%26sku%3D192581%26category_oid%3D-36948&t=Currys%20-%20Shop%20for%20Xbox%20360%20software%20-%20Activision%20Xbox%20360%20Modern%20Warfare%202&s=", "notes"=>"<blank...for now>"}}
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Action Controller: Exception caught', '2009-08-09 14:16:28', 'http://localhost:3000/items/new?v=1&u=http%3A%2F%2Fwww.currys.co.uk%3A80%2Fmartprd%2Fstore%2Fcur_page.jsp%3FBV_SessionID%3D%40%40%40%401212486315.1249827234%40%40%40%40%26BV_EngineID%3Dcccfadehmklgfelcflgceggdhhmdgmj.0%26page%3DProduct%26fm%3Dnull%26sm%3Dnull%26tm%3Dnull%26sku%3D192581%26category_oid%3D-36948&t=Currys%20-%20Shop%20for%20Xbox%20360%20software%20-%20Activision%20Xbox%20360%20Modern%20Warfare%202&s=', '<blank...for now>', '2009-08-09 14:16:28')[0m
+Redirected to http://localhost:3000/items/4
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 15:16:28) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 4) [0m
+Rendering template within layouts/items
+Rendering items/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/items/4]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:16:30) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:16:41) [GET]
+  [4;35;1mItem Load (0.9ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:16:45) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:18:51) [GET]
+  [4;35;1mItem Load (0.9ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:25:48) [GET]
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 15:26:06) [GET]
+  Parameters: {"v"=>"1", "id"=>"create", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=create):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 15:26:06) [GET]
+  Parameters: {"v"=>"1", "id"=>"create", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=create):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 15:26:45) [GET]
+  Parameters: {"v"=>"1", "id"=>"create", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=create):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 15:26:45) [GET]
+  Parameters: {"v"=>"1", "id"=>"create", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=create):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:31:39) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 15:33:54) [GET]
+  Parameters: {"v"=>"1", "id"=>"create", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=create):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-09 15:33:54) [GET]
+  Parameters: {"v"=>"1", "id"=>"create", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Item with ID=create):
+  app/controllers/items_controller.rb:16:in `show'
+
+Rendered rescues/_trace (157.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:34:26) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories', '2009-08-09 14:34:26', 'http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294', '<blank...for now>', '2009-08-09 14:34:26')[0m
+
+ArgumentError (too few arguments):
+  app/controllers/items_controller.rb:35:in `format'
+  app/controllers/items_controller.rb:35:in `new'
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:35:11) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories', '2009-08-09 14:35:11', 'http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294', '<blank...for now>', '2009-08-09 14:35:11')[0m
+Redirected to http://localhost:3000/items
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/items_controller.rb:39:in `new'
+
+Rendered rescues/_trace (51.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:35:35) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Create (35.8ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories', '2009-08-09 14:35:35', 'http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=0B2XRNR3HS5RB0H3JNTP&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294', '<blank...for now>', '2009-08-09 14:35:35')[0m
+Redirected to http://localhost:3000/items
+Completed in 46ms (DB: 36) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D0B2XRNR3HS5RB0H3JNTP%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294&t=Converse%20Chuck%20Taylor%20Allstar%20Canvas%20Hi-top%20mono%3A%20Amazon.co.uk%3A%20Shoes%20%26%20Accessories&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:35:35) [GET]
+  [4;35;1mItem Load (1.3ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 135ms (View: 10, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:36:03) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Ox mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/Converse-Allstar-Star-Canvas-M9697/dp/B0000AFSZM/ref=sr_1_1?ie=UTF8&s=apparel&qid=1249828554&sr=1-1"}
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Converse Chuck Taylor Allstar Ox mono: Amazon.co.uk: Shoes & Accessories', '2009-08-09 14:36:03', 'http://www.amazon.co.uk/Converse-Allstar-Star-Canvas-M9697/dp/B0000AFSZM/ref=sr_1_1?ie=UTF8&s=apparel&qid=1249828554&sr=1-1', '<blank...for now>', '2009-08-09 14:36:03')[0m
+Redirected to http://localhost:3000/items
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2FConverse-Allstar-Star-Canvas-M9697%2Fdp%2FB0000AFSZM%2Fref%3Dsr_1_1%3Fie%3DUTF8%26s%3Dapparel%26qid%3D1249828554%26sr%3D1-1&t=Converse%20Chuck%20Taylor%20Allstar%20Ox%20mono%3A%20Amazon.co.uk%3A%20Shoes%20%26%20Accessories&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:36:03) [GET]
+  [4;35;1mItem Load (1.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 29ms (View: 12, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:37:35) [GET]
+  [4;36;1mItem Load (1.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:37:49) [GET]
+  [4;35;1mItem Load (1.1ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:38:20) [GET]
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:38:43) [GET]
+  [4;35;1mItem Load (1.3ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:38:51) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Ox mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/Converse-Allstar-Star-Canvas-M9697/dp/B0000AFSZM/ref=sr_1_1?ie=UTF8&s=apparel&qid=1249828554&sr=1-1"}
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Converse Chuck Taylor Allstar Ox mono: Amazon.co.uk: Shoes & Accessories', '2009-08-09 14:38:51', 'http://www.amazon.co.uk/Converse-Allstar-Star-Canvas-M9697/dp/B0000AFSZM/ref=sr_1_1?ie=UTF8&s=apparel&qid=1249828554&sr=1-1', '<blank...for now>', '2009-08-09 14:38:51')[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2FConverse-Allstar-Star-Canvas-M9697%2Fdp%2FB0000AFSZM%2Fref%3Dsr_1_1%3Fie%3DUTF8%26s%3Dapparel%26qid%3D1249828554%26sr%3D1-1&t=Converse%20Chuck%20Taylor%20Allstar%20Ox%20mono%3A%20Amazon.co.uk%3A%20Shoes%20%26%20Accessories&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:38:51) [GET]
+  [4;35;1mItem Load (1.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:54:04) [GET]
+  [4;36;1mItem Load (1.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 15:54:10) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"A Quick Tutorial on JavaScript Bookmarklets", "u"=>"http://www.mattcutts.com/blog/javascript-bookmarklet-basics/"}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('A Quick Tutorial on JavaScript Bookmarklets', '2009-08-09 14:54:10', 'http://www.mattcutts.com/blog/javascript-bookmarklet-basics/', '<blank...for now>', '2009-08-09 14:54:10')[0m
+Redirected to http://localhost:3000/items
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.mattcutts.com%2Fblog%2Fjavascript-bookmarklet-basics%2F&t=A%20Quick%20Tutorial%20on%20JavaScript%20Bookmarklets&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:54:10) [GET]
+  [4;36;1mItem Load (1.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:57:58) [GET]
+  [4;35;1mItem Load (1.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:58:09) [GET]
+  [4;36;1mItem Load (1.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:58:41) [GET]
+  [4;35;1mItem Load (1.3ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:58:55) [GET]
+  [4;36;1mItem Load (1.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 15:58:58) [GET]
+  [4;35;1mItem Load (1.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:00:04) [GET]
+  [4;36;1mItem Load (1.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:00:42) [GET]
+  [4;35;1mItem Load (1.3ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:00:49) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"A Quick Tutorial on JavaScript Bookmarklets", "u"=>"http://www.mattcutts.com/blog/javascript-bookmarklet-basics/"}
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('A Quick Tutorial on JavaScript Bookmarklets', '2009-08-09 15:00:49', 'http://www.mattcutts.com/blog/javascript-bookmarklet-basics/', '<blank...for now>', '2009-08-09 15:00:49')[0m
+Redirected to http://localhost:3000/items
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.mattcutts.com%2Fblog%2Fjavascript-bookmarklet-basics%2F&t=A%20Quick%20Tutorial%20on%20JavaScript%20Bookmarklets&s=]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:00:49) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"A Quick Tutorial on JavaScript Bookmarklets", "u"=>"http://www.mattcutts.com/blog/javascript-bookmarklet-basics/"}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('A Quick Tutorial on JavaScript Bookmarklets', '2009-08-09 15:00:49', 'http://www.mattcutts.com/blog/javascript-bookmarklet-basics/', '<blank...for now>', '2009-08-09 15:00:49')[0m
+Redirected to http://localhost:3000/items
+Completed in 6ms | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.mattcutts.com%2Fblog%2Fjavascript-bookmarklet-basics%2F&t=A%20Quick%20Tutorial%20on%20JavaScript%20Bookmarklets&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:00:49) [GET]
+  [4;36;1mItem Load (1.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 113ms (View: 102, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:00:49) [GET]
+  [4;35;1mItem Load (1.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 18ms (View: 14, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:01:10) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=1X5EVVYAAA3YBGF0W04R&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories', '2009-08-09 15:01:10', 'http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=1X5EVVYAAA3YBGF0W04R&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294', '<blank...for now>', '2009-08-09 15:01:10')[0m
+Redirected to http://localhost:3000/items
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D1X5EVVYAAA3YBGF0W04R%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294&t=Converse%20Chuck%20Taylor%20Allstar%20Canvas%20Hi-top%20mono%3A%20Amazon.co.uk%3A%20Shoes%20%26%20Accessories&s=]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:01:10) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=1X5EVVYAAA3YBGF0W04R&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories', '2009-08-09 15:01:10', 'http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=1X5EVVYAAA3YBGF0W04R&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294', '<blank...for now>', '2009-08-09 15:01:10')[0m
+Redirected to http://localhost:3000/items
+Completed in 7ms | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D1X5EVVYAAA3YBGF0W04R%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294&t=Converse%20Chuck%20Taylor%20Allstar%20Canvas%20Hi-top%20mono%3A%20Amazon.co.uk%3A%20Shoes%20%26%20Accessories&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:01:10) [GET]
+  [4;36;1mItem Load (2.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:01:10) [GET]
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 19ms (View: 15, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:02:09) [GET]
+  [4;36;1mItem Load (1.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:02:42) [GET]
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 28ms (View: 18, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:03:38) [GET]
+  [4;36;1mItem Load (1.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 27ms (View: 20, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:03:52) [GET]
+  [4;35;1mItem Load (1.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 28ms (View: 21, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:04:18) [GET]
+  [4;36;1mItem Load (1.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 114ms (View: 107, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:04:19) [GET]
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:04:28) [GET]
+  [4;36;1mItem Load (1.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:06:48) [GET]
+  [4;35;1mItem Load (1.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 27ms (View: 19, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:07:03) [GET]
+  [4;36;1mItem Load (1.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 22ms (View: 15, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:07:16) [GET]
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:07:54) [GET]
+  [4;36;1mItem Load (1.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:07:56) [GET]
+  [4;35;1mItem Load (1.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 22ms (View: 15, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:09:04) [GET]
+  [4;36;1mItem Load (1.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:09:28) [GET]
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 28ms (View: 21, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-09 16:09:36) [GET]
+  Parameters: {"v"=>"1", "s"=>"  <a href=\"javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://<%= request.host_with_port %>/bookmarks/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\\s*|\\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;\">\n", "t"=>"Creating and Integrating Bookmarklets with Rails // RailsTips.org by John Nunemaker", "u"=>"http://video.railstips.org/creating-and-integrating-bookmarklets-with-rails/"}
+
+ActionController::RoutingError (No route matches "/bookmarks/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-09 16:09:36) [GET]
+  Parameters: {"v"=>"1", "s"=>"  <a href=\"javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f= 'http://<%= request.host_with_port %>/bookmarks/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\\s*|\\s*$/g,''))%20+'&s='+e(s),u=f+p;location.href=u;\">\n", "t"=>"Creating and Integrating Bookmarklets with Rails // RailsTips.org by John Nunemaker", "u"=>"http://video.railstips.org/creating-and-integrating-bookmarklets-with-rails/"}
+
+ActionController::RoutingError (No route matches "/bookmarks/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:09:53) [GET]
+  [4;36;1mItem Load (1.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:12:59) [GET]
+  [4;35;1mItem Load (1.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:13:07) [GET]
+  [4;36;1mItem Load (1.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 22ms (View: 14, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:13:21) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : 17 Again : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html"}
+  [4;35;1mItem Create (300.6ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : 17 Again : DVD - Free Delivery', '2009-08-09 15:13:21', 'http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html', '<blank...for now>', '2009-08-09 15:13:21')[0m
+Redirected to http://localhost:3000/items
+Completed in 314ms (DB: 301) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F9545331%2F17-Again%2FProduct.html&t=Play.com%20(UK)%20%3A%2017%20Again%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:13:21) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : 17 Again : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html"}
+  [4;36;1mItem Create (1.2ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : 17 Again : DVD - Free Delivery', '2009-08-09 15:13:21', 'http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html', '<blank...for now>', '2009-08-09 15:13:21')[0m
+Redirected to http://localhost:3000/items
+Completed in 7ms | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F9545331%2F17-Again%2FProduct.html&t=Play.com%20(UK)%20%3A%2017%20Again%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:13:21) [GET]
+  [4;35;1mItem Load (1.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:13:21) [GET]
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 20ms (View: 16, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:14:44) [GET]
+  [4;35;1mItem Load (2.1ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 121ms (View: 112, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:15:02) [GET]
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 24ms (View: 17, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:15:23) [GET]
+  [4;35;1mItem Load (1.9ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 29ms (View: 21, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:15:38) [GET]
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES(NULL, '2009-08-09 15:15:38', NULL, '<blank...for now>', '2009-08-09 15:15:38')[0m
+Redirected to http://localhost:3000/items
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:15:39) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Explorers of the New Century: Amazon.co.uk: Magnus Mills: Books", "u"=>"http://www.amazon.co.uk/gp/product/0747580782/ref=s9_simz_gw_s14_p14_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-3&pf_rd_r=0RV6ZZ2NC0BVQZ7ZT8H5&pf_rd_t=101&pf_rd_p=467128473&pf_rd_i=468294"}
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Explorers of the New Century: Amazon.co.uk: Magnus Mills: Books', '2009-08-09 15:15:39', 'http://www.amazon.co.uk/gp/product/0747580782/ref=s9_simz_gw_s14_p14_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-3&pf_rd_r=0RV6ZZ2NC0BVQZ7ZT8H5&pf_rd_t=101&pf_rd_p=467128473&pf_rd_i=468294', '<blank...for now>', '2009-08-09 15:15:39')[0m
+Redirected to http://localhost:3000/items
+Completed in 7ms | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2F0747580782%2Fref%3Ds9_simz_gw_s14_p14_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-3%26pf_rd_r%3D0RV6ZZ2NC0BVQZ7ZT8H5%26pf_rd_t%3D101%26pf_rd_p%3D467128473%26pf_rd_i%3D468294&t=Explorers%20of%20the%20New%20Century%3A%20Amazon.co.uk%3A%20Magnus%20Mills%3A%20Books&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:15:39) [GET]
+
+ArgumentError (A copy of ItemsController has been removed from the module tree but is still active!):
+  app/controllers/items_controller.rb:5:in `index'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:15:39) [GET]
+  [4;36;1mItem Load (1.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 29ms (View: 20, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:16:03) [GET]
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES(NULL, '2009-08-09 15:16:03', NULL, '<blank...for now>', '2009-08-09 15:16:03')[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:16:03) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories", "u"=>"http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=1V1H1TJRZXZEPEJT5KW5&pf_rd_t=101&pf_rd_p=467128533&pf_rd_i=468294"}
+  [4;36;1mItem Create (0.9ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Converse Chuck Taylor Allstar Canvas Hi-top mono: Amazon.co.uk: Shoes & Accessories', '2009-08-09 15:16:03', 'http://www.amazon.co.uk/gp/product/B000OYM0SW/ref=s9_simz_gw_s0_p309_i2?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=1V1H1TJRZXZEPEJT5KW5&pf_rd_t=101&pf_rd_p=467128533&pf_rd_i=468294', '<blank...for now>', '2009-08-09 15:16:03')[0m
+Redirected to http://localhost:3000/items
+Completed in 8ms | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB000OYM0SW%2Fref%3Ds9_simz_gw_s0_p309_i2%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-2%26pf_rd_r%3D1V1H1TJRZXZEPEJT5KW5%26pf_rd_t%3D101%26pf_rd_p%3D467128533%26pf_rd_i%3D468294&t=Converse%20Chuck%20Taylor%20Allstar%20Canvas%20Hi-top%20mono%3A%20Amazon.co.uk%3A%20Shoes%20%26%20Accessories&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:16:03) [GET]
+  [4;35;1mItem Load (2.1ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 27ms (View: 19, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:16:03) [GET]
+  [4;36;1mItem Load (2.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 26ms (View: 21, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-09 16:16:10) [DELETE]
+  Parameters: {"authenticity_token"=>"bwyIk8L+zaNlIGIsBQCsgKFDk3xjewTlfMKmusKNaoo=", "id"=>"19"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 19) [0m
+  [4;36;1mItem Destroy (0.5ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 19[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/19]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:16:10) [GET]
+  [4;35;1mItem Load (2.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 27ms (View: 19, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-09 16:16:12) [DELETE]
+  Parameters: {"authenticity_token"=>"bwyIk8L+zaNlIGIsBQCsgKFDk3xjewTlfMKmusKNaoo=", "id"=>"17"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 17) [0m
+  [4;35;1mItem Destroy (0.4ms)[0m   [0mDELETE FROM "items" WHERE "id" = 17[0m
+Redirected to http://localhost:3000/items
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/items/17]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:16:12) [GET]
+  [4;36;1mItem Load (2.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 25ms (View: 18, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:18:46) [GET]
+  [4;35;1mItem Load (1.9ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 25ms (View: 18, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:18:57) [GET]
+  [4;36;1mItem Load (1.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 25ms (View: 18, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-09 16:19:04) [DELETE]
+  Parameters: {"authenticity_token"=>"bwyIk8L+zaNlIGIsBQCsgKFDk3xjewTlfMKmusKNaoo=", "id"=>"16"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 16) [0m
+  [4;36;1mItem Destroy (0.4ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 16[0m
+Redirected to http://localhost:3000/items
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/items/16]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:19:04) [GET]
+  [4;35;1mItem Load (2.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:19:19) [GET]
+  [4;36;1mItem Create (1.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES(NULL, '2009-08-09 15:19:19', NULL, '<blank...for now>', '2009-08-09 15:19:19')[0m
+Redirected to http://localhost:3000/items
+Completed in 26ms (DB: 2) | 302 Found [http://localhost/items/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:19:19) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : 17 Again : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html"}
+  [4;35;1mItem Create (0.8ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : 17 Again : DVD - Free Delivery', '2009-08-09 15:19:19', 'http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html', '<blank...for now>', '2009-08-09 15:19:19')[0m
+Redirected to http://localhost:3000/items
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F9545331%2F17-Again%2FProduct.html&t=Play.com%20(UK)%20%3A%2017%20Again%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:19:19) [GET]
+  [4;36;1mItem Load (2.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?) on line #18 of app/views/items/index.html.erb:
+15: 
+16: <% @items.each do |item| %>
+17:   <tr>
+18:     <td><%=h item.name %></td>
+19:     <td><%=h item.notes %></td>
+20:     <td><%= link_to "Visit Item page", "#{item.url}", :popup => true %></td>
+21:     <td><%= link_to 'Show', item %></td>
+
+    app/views/items/index.html.erb:18
+    app/views/items/index.html.erb:16:in `each'
+    app/views/items/index.html.erb:16
+    app/controllers/items_controller.rb:7:in `index'
+
+Rendered rescues/_trace (59.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:19:19) [GET]
+  [4;35;1mItem Load (3.1ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 31ms (View: 21, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:20:06) [GET]
+  [4;36;1mItem Load (2.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 31ms (View: 23, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:20:11) [GET]
+  [4;35;1mItem Load (2.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 26ms (View: 18, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:20:21) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : 17 Again : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html"}
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : 17 Again : DVD - Free Delivery', '2009-08-09 15:20:21', 'http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html', '<blank...for now>', '2009-08-09 15:20:21')[0m
+Redirected to http://localhost:3000/items
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F9545331%2F17-Again%2FProduct.html&t=Play.com%20(UK)%20%3A%2017%20Again%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:20:21) [GET]
+  [4;35;1mItem Load (2.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 28ms (View: 20, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:20:36) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Explorers of the New Century: Amazon.co.uk: Magnus Mills: Books", "u"=>"http://www.amazon.co.uk/gp/product/0747580782/ref=s9_simz_gw_s0_p14_i1?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=156EQ14MKCCR4GHV3PDE&pf_rd_t=101&pf_rd_p=467128533&pf_rd_i=468294"}
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Explorers of the New Century: Amazon.co.uk: Magnus Mills: Books', '2009-08-09 15:20:36', 'http://www.amazon.co.uk/gp/product/0747580782/ref=s9_simz_gw_s0_p14_i1?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=156EQ14MKCCR4GHV3PDE&pf_rd_t=101&pf_rd_p=467128533&pf_rd_i=468294', '<blank...for now>', '2009-08-09 15:20:36')[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2F0747580782%2Fref%3Ds9_simz_gw_s0_p14_i1%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-2%26pf_rd_r%3D156EQ14MKCCR4GHV3PDE%26pf_rd_t%3D101%26pf_rd_p%3D467128533%26pf_rd_i%3D468294&t=Explorers%20of%20the%20New%20Century%3A%20Amazon.co.uk%3A%20Magnus%20Mills%3A%20Books&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:20:36) [GET]
+  [4;35;1mItem Load (2.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 29ms (View: 21, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:24:08) [GET]
+  [4;36;1mItem Load (2.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 32ms (View: 24, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:24:15) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Favelet/Bookmarklet: New Browser Window", "u"=>"http://www.codehouse.com/javascript/favelets/new_window/"}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Favelet/Bookmarklet: New Browser Window', '2009-08-09 15:24:15', 'http://www.codehouse.com/javascript/favelets/new_window/', '<blank...for now>', '2009-08-09 15:24:15')[0m
+Redirected to http://localhost:3000/items
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.codehouse.com%2Fjavascript%2Ffavelets%2Fnew_window%2F&t=Favelet%2FBookmarklet%3A%20New%20Browser%20Window&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:24:15) [GET]
+  [4;36;1mItem Load (2.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 29ms (View: 21, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:25:24) [GET]
+  [4;35;1mItem Load (2.3ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 33ms (View: 25, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:25:36) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : 17 Again : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html"}
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : 17 Again : DVD - Free Delivery', '2009-08-09 15:25:36', 'http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html', '<blank...for now>', '2009-08-09 15:25:36')[0m
+Redirected to http://localhost:3000/items
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F9545331%2F17-Again%2FProduct.html&t=Play.com%20(UK)%20%3A%2017%20Again%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:25:36) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : 17 Again : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html"}
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : 17 Again : DVD - Free Delivery', '2009-08-09 15:25:36', 'http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html', '<blank...for now>', '2009-08-09 15:25:36')[0m
+Redirected to http://localhost:3000/items
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F9545331%2F17-Again%2FProduct.html&t=Play.com%20(UK)%20%3A%2017%20Again%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:25:36) [GET]
+  [4;36;1mItem Load (2.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 120ms (View: 112, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:25:36) [GET]
+  [4;35;1mItem Load (3.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 31ms (View: 24, DB: 4) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:28:50) [GET]
+  [4;36;1mItem Load (2.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 36ms (View: 27, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:29:08) [GET]
+  [4;35;1mItem Load (2.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 31ms (View: 22, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:30:13) [GET]
+  [4;36;1mItem Load (2.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 35ms (View: 27, DB: 2) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:30:22) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Alien Quadrilogy Box Set (9 Discs) (5.1/DTS) : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/125722/Alien-Quadrilogy-Box-Set/Product.html"}
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Alien Quadrilogy Box Set (9 Discs) (5.1/DTS) : DVD - Free Delivery', '2009-08-09 15:30:22', 'http://www.play.com/DVD/DVD/4-/125722/Alien-Quadrilogy-Box-Set/Product.html', '<blank...for now>', '2009-08-09 15:30:22')[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F125722%2FAlien-Quadrilogy-Box-Set%2FProduct.html&t=Play.com%20(UK)%20%3A%20Alien%20Quadrilogy%20Box%20Set%20(9%20Discs)%20(5.1%2FDTS)%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:30:22) [GET]
+  [4;36;1mItem Load (3.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 32ms (View: 23, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:30:47) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Knowing : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/8135072/Knowing/Product.html"}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Knowing : DVD - Free Delivery', '2009-08-09 15:30:47', 'http://www.play.com/DVD/DVD/4-/8135072/Knowing/Product.html', '<blank...for now>', '2009-08-09 15:30:47')[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F8135072%2FKnowing%2FProduct.html&t=Play.com%20(UK)%20%3A%20Knowing%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:30:47) [GET]
+  [4;36;1mItem Load (2.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 32ms (View: 24, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:31:14) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Knowing : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/8135072/Knowing/Product.html"}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Knowing : DVD - Free Delivery', '2009-08-09 15:31:14', 'http://www.play.com/DVD/DVD/4-/8135072/Knowing/Product.html', '<blank...for now>', '2009-08-09 15:31:14')[0m
+Redirected to http://localhost:3000/items
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F8135072%2FKnowing%2FProduct.html&t=Play.com%20(UK)%20%3A%20Knowing%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:31:14) [GET]
+  [4;36;1mItem Load (2.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 34ms (View: 25, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:31:44) [GET]
+  [4;35;1mItem Load (2.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 38ms (View: 30, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:31:57) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Harry Potter 1-5 Box Set (Single Disc Editions) (5 Discs) : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/3475204/Harry-Potter-1-5-Box-Set/Product.html"}
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Harry Potter 1-5 Box Set (Single Disc Editions) (5 Discs) : DVD - Free Delivery', '2009-08-09 15:31:57', 'http://www.play.com/DVD/DVD/4-/3475204/Harry-Potter-1-5-Box-Set/Product.html', '<blank...for now>', '2009-08-09 15:31:57')[0m
+Redirected to http://localhost:3000/items
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F3475204%2FHarry-Potter-1-5-Box-Set%2FProduct.html&t=Play.com%20(UK)%20%3A%20Harry%20Potter%201-5%20Box%20Set%20(Single%20Disc%20Editions)%20(5%20Discs)%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:31:57) [GET]
+  [4;35;1mItem Load (2.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 35ms (View: 27, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:32:28) [GET]
+  [4;36;1mItem Load (2.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 38ms (View: 30, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:32:37) [GET]
+  [4;35;1mItem Load (3.3ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 37ms (View: 26, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:32:51) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Seven Pounds : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/5890636/Seven-Pounds/Product.html"}
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Seven Pounds : DVD - Free Delivery', '2009-08-09 15:32:51', 'http://www.play.com/DVD/DVD/4-/5890636/Seven-Pounds/Product.html', '<blank...for now>', '2009-08-09 15:32:51')[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 0) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F5890636%2FSeven-Pounds%2FProduct.html&t=Play.com%20(UK)%20%3A%20Seven%20Pounds%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:32:51) [GET]
+  [4;35;1mItem Load (3.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 125ms (View: 27, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:33:33) [GET]
+  [4;36;1mItem Load (2.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 40ms (View: 31, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:34:01) [GET]
+  [4;35;1mItem Load (2.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 39ms (View: 30, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:35:18) [GET]
+  [4;36;1mItem Load (2.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 39ms (View: 30, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:35:26) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Seven Pounds : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/5890636/Seven-Pounds/Product.html"}
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Seven Pounds : DVD - Free Delivery', '2009-08-09 15:35:26', 'http://www.play.com/DVD/DVD/4-/5890636/Seven-Pounds/Product.html', '<blank...for now>', '2009-08-09 15:35:26')[0m
+Redirected to http://localhost:3000/items
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F5890636%2FSeven-Pounds%2FProduct.html&t=Play.com%20(UK)%20%3A%20Seven%20Pounds%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:35:26) [GET]
+  [4;36;1mItem Load (2.9ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 37ms (View: 28, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:36:10) [GET]
+  [4;35;1mItem Load (2.9ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 40ms (View: 31, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:36:18) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Seven Pounds : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/5890636/Seven-Pounds/Product.html"}
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Seven Pounds : DVD - Free Delivery', '2009-08-09 15:36:18', 'http://www.play.com/DVD/DVD/4-/5890636/Seven-Pounds/Product.html', '<blank...for now>', '2009-08-09 15:36:18')[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F5890636%2FSeven-Pounds%2FProduct.html&t=Play.com%20(UK)%20%3A%20Seven%20Pounds%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:36:18) [GET]
+  [4;35;1mItem Load (3.1ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 39ms (View: 29, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:36:56) [GET]
+  [4;36;1mItem Load (3.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 42ms (View: 33, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:37:01) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Seven Pounds : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/5890636/Seven-Pounds/Product.html"}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Seven Pounds : DVD - Free Delivery', '2009-08-09 15:37:01', 'http://www.play.com/DVD/DVD/4-/5890636/Seven-Pounds/Product.html', '<blank...for now>', '2009-08-09 15:37:01')[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F5890636%2FSeven-Pounds%2FProduct.html&t=Play.com%20(UK)%20%3A%20Seven%20Pounds%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:37:01) [GET]
+  [4;36;1mItem Load (4.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 47ms (View: 36, DB: 4) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:37:31) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Bedtime Stories : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/5439885/Bedtime-Stories/Product.html"}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Bedtime Stories : DVD - Free Delivery', '2009-08-09 15:37:31', 'http://www.play.com/DVD/DVD/4-/5439885/Bedtime-Stories/Product.html', '<blank...for now>', '2009-08-09 15:37:31')[0m
+Redirected to http://localhost:3000/items
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F5439885%2FBedtime-Stories%2FProduct.html&t=Play.com%20(UK)%20%3A%20Bedtime%20Stories%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:37:31) [GET]
+  [4;36;1mItem Load (3.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 39ms (View: 30, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:38:17) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : Viva : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/-/36/50/-/9730643/Viva/Product.html?searchtype=genre"}
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : Viva : DVD - Free Delivery', '2009-08-09 15:38:17', 'http://www.play.com/DVD/DVD/-/36/50/-/9730643/Viva/Product.html?searchtype=genre', '<blank...for now>', '2009-08-09 15:38:17')[0m
+Redirected to http://localhost:3000/items
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F-%2F36%2F50%2F-%2F9730643%2FViva%2FProduct.html%3Fsearchtype%3Dgenre&t=Play.com%20(UK)%20%3A%20Viva%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:38:17) [GET]
+  [4;36;1mItem Load (3.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 128ms (View: 119, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#destroy (for 127.0.0.1 at 2009-08-09 16:38:30) [DELETE]
+  Parameters: {"authenticity_token"=>"bwyIk8L+zaNlIGIsBQCsgKFDk3xjewTlfMKmusKNaoo=", "id"=>"37"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 37) [0m
+  [4;36;1mItem Destroy (0.4ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 37[0m
+Redirected to http://localhost:3000/items
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/items/37]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:38:30) [GET]
+  [4;35;1mItem Load (3.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 41ms (View: 31, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:39:08) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : The Damned United : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/8850300/-/Product.html?page=title&dpr=0"}
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('Play.com (UK) : The Damned United : DVD - Free Delivery', '2009-08-09 15:39:08', 'http://www.play.com/DVD/DVD/4-/8850300/-/Product.html?page=title&dpr=0', '<blank...for now>', '2009-08-09 15:39:08')[0m
+Redirected to http://localhost:3000/items
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F8850300%2F-%2FProduct.html%3Fpage%3Dtitle%26dpr%3D0&t=Play.com%20(UK)%20%3A%20The%20Damned%20United%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:39:08) [GET]
+  [4;35;1mItem Load (3.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 40ms (View: 30, DB: 3) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-09 16:39:33) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"All Quiet on the Orient Express: Amazon.co.uk: Magnus Mills: Books", "u"=>"http://www.amazon.co.uk/gp/product/0007177402/ref=s9_simz_gw_s0_p14_i3?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=05DHF1B5FT97C6AS0VCD&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mItem Create (0.5ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "created_at") VALUES('All Quiet on the Orient Express: Amazon.co.uk: Magnus Mills: Books', '2009-08-09 15:39:33', 'http://www.amazon.co.uk/gp/product/0007177402/ref=s9_simz_gw_s0_p14_i3?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=05DHF1B5FT97C6AS0VCD&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294', '<blank...for now>', '2009-08-09 15:39:33')[0m
+Redirected to http://localhost:3000/items
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2F0007177402%2Fref%3Ds9_simz_gw_s0_p14_i3%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D05DHF1B5FT97C6AS0VCD%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294&t=All%20Quiet%20on%20the%20Orient%20Express%3A%20Amazon.co.uk%3A%20Magnus%20Mills%3A%20Books&s=]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-09 16:39:34) [GET]
+  [4;35;1mItem Load (3.3ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 40ms (View: 30, DB: 3) | 200 OK [http://localhost/items]

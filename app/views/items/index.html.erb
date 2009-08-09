@@ -1,0 +1,33 @@
+<h1>Listing items</h1>
+
+<p>
+  <a href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='http://<%= request.host_with_port %>/items/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\s*|\s*$/g,''))%20+'&s='+e(s),u=f+p;try{if(!/^(.*\.)?instapaper([^.]*)?$/.test(l.host))throw(0);
+iptstbt();}catch(z){a =function(){if(!w.open(u,'t','toolbar=1,resizable=1,status=0,scrollbars=yes,
+width=960,height=500'))l.href=u;};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);
+else a();w.close();}void(0)">
+    Bookmarklet
+  </a>
+</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Notes</th>
+    <th>Url</th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%=h item.name %></td>
+    <td><%=h item.notes %></td>
+    <td><%= link_to "Visit Item page", "#{item.url}", :popup => true %></td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to 'Edit', edit_item_path(item) %></td>
+    <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New item', new_item_path %>
