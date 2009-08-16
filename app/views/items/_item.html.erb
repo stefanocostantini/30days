@@ -1,0 +1,9 @@
+<% @item = item %>
+
+<div class="item">
+	<p><%= in_place_editor_field :item, :name %> |</p> 
+	<p><%= link_to 'Visit site (opens in a new window)', "#{@item.url}", :popup => 'true' %></p>
+	<p><%= in_place_editor_field :item, :notes %> | </p>
+	<p>Item added on <%= @item.created_at.strftime('%v') %> |</p>
+	<p>Item created by <%= @item.user.login %></p>
+</div>

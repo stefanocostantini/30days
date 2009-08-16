@@ -1,9 +1,15 @@
 class ItemsController < ApplicationController
+
+  in_place_edit_for :item, :name
+  in_place_edit_for :item, :notes
+ 
+  before_filter :login_required
+
   # GET /items
   # GET /items.xml
   def index
-    @items = Item.all
-
+    @items = @current_user.items.all 
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @items }
@@ -13,7 +19,7 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.xml
   def show
-    @item = Item.find(params[:id])
+    @item = @current_user.items.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,14 +31,14 @@ class ItemsController < ApplicationController
   # GET /items/new.xml
   def new
   
-    @item = Item.new
+    @item = @current_user.items.new
     @item.name = params[:t]
-    @item.notes = "<blank...for now>"
+    @item.notes = "Click here to add a note"
     @item.url = params[:u]
     
     @item.save
     
-    redirect_to :action => 'index' 
+    redirect_to :action => 'show', :id => @item.id  
     flash[:notice] = 'Item was successfully created.'
   
     
@@ -40,13 +46,13 @@ class ItemsController < ApplicationController
 
   # GET /items/1/edit
   def edit
-    @item = Item.find(params[:id])
+    @item = @current_user.items.find(params[:id])
   end
 
   # POST /items
   # POST /items.xml
   def create
-    @item = Item.new(params[:item])
+    @item = @current_user.items.new(params[:item])
     @item.name = params[:t]
     @item.notes = "<blank...for now>"
     @item.url = params[:u]
@@ -66,7 +72,7 @@ class ItemsController < ApplicationController
   # PUT /items/1
   # PUT /items/1.xml
   def update
-    @item = Item.find(params[:id])
+    @item = @current_user.items.find(params[:id])
 
     respond_to do |format|
       if @item.update_attributes(params[:item])
@@ -83,7 +89,7 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.xml
   def destroy
-    @item = Item.find(params[:id])
+    @item = @current_user.items.find(params[:id])
     @item.destroy
 
     respond_to do |format|

@@ -5,13 +5,26 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Items: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag :defaults %>
 </head>
 <body>
 
 <p style="color: green"><%= flash[:notice] %></p>
 
-<%= yield %>
+<div id="content">
+
+	<%= yield %>
+
+</div>
+
+	<div id="login_logout">
+		<% if logged_in? %>
+			Logged in as: <b><%= current_user.login %> </b> | <%= link_to 'Logout', logout_path %>
+		<% else %>
+			No user currently logged in
+		<% end %>
+	</div>
 
 </body>
 </html>

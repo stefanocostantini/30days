@@ -1,11 +1,12 @@
-<p>
+<div id="item_added">
+</p>
   <b>Name:</b>
-  <%=h @item.name %>
+  <%= in_place_editor_field :item, :name %>
 </p>
 
 <p>
   <b>Notes:</b>
-  <%=h @item.notes %>
+  <%= in_place_editor_field :item, :notes %>
 </p>
 
 <p>
@@ -13,6 +14,8 @@
   <%=h @item.url %>
 </p>
 
+</div>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<%= link_to 'See all items', items_path, :popup => 'true' %>
+
+<a href="javascript:window.close();">Close this window</a>
