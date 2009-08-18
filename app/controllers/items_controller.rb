@@ -8,7 +8,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def index
-    @items = @current_user.items.all 
+    @items = @current_user.items.all(:order => 'created_at ASC')
     
     respond_to do |format|
       format.html # index.html.erb
