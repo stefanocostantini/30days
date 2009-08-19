@@ -5,23 +5,8 @@ padding: 0;
 
 body {
 	text-align: center;
-	background-color: #999999;
-	font-family: "Helvetica", sans-serif;
-}
-
-#bookmarklet a {
-	text-decoration: none;
-	font-weight: bold;
-	color: #333333;
-	display: block;
-	background-color: gray;
-	font-size: 12px;
-	width: 85px;
-	height: 20px;
-	line-height: 20px;
-	text-align: center;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	background-color: #ffffff;
+	font-family: "Helvetica", "Arial",  sans-serif;
 }
 
 #content {
@@ -57,7 +42,100 @@ h3 {
 	margin-top: 5px;
 }
 
+#header {
+	display: block;
+	height: 120px;
+}
 
+#box_front {
+	position: relative;
+	top: -100px;
+	left: 15px;
+	display: block;
+	width: 110px;
+	height: 110px;
+	border: 1px solid #000000;
+	z-index: 10;
+	background-color: #ffffff;
+}
+
+#box_front span {
+	position: relative;
+	font-weight: bold;
+	font-size: 18px;
+	top: 88px;
+	display: block;
+	text-align: right;
+	padding-right: 3px;
+}
+
+#box_back {
+	position: relative;
+	top: 17px;
+	left: 20px;
+	display: block;
+	width: 110px;
+	height: 110px;
+	border: 1px solid #000000;
+	background-color: #000000;
+	z-index: 1;
+}
+
+#message_board {
+	position: relative;
+	display: block;
+	width: 925px;
+	top: 10px;
+	left: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 35px;
+	line-height: 35px;
+	border-top: 1px dotted #000000;
+	border-bottom: 1px dotted #000000;
+}
+
+#login_logout {
+	position: relative;
+	display: block;
+	float: right;
+	clear: left;
+	top: 12px;
+	right: 20px;
+	text-align: right;
+	color: #333333;
+	font-size: 14px;
+
+}
+
+#bookmarklet {
+	position: relative;
+	float: right;
+	display: block;
+	top: -18px;
+	left: -20px;
+	height: 20px;
+	width: 220px;
+	font-size: 12px;
+	line-height: 20px;
+
+}
+
+#bookmarklet a {
+	float: right;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333333;
+	display: block;
+	background-color: #cccccc;
+	font-size: 11px;
+	width: 75px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
 
 .item {
 	width: 930px;
@@ -77,8 +155,49 @@ h3 {
 	height: 110px;
 }
 
+#notes {
+	display: block;
+	margin-top: 8px;
+	height: 60px;
+	width: 800px;
+	font-size: 13px;
+	font-style: italic;
+	color: #666666;
+	border: none;
+}
+
+#notes form input {
+	display: block;
+	font-size: 12px;
+	color: #666666;
+	font-style: italic;
+	width: 800px;
+	border: 1px dotted #333333;
+	height: 30px;
+}
+
+#notes form a {
+	text-decoration: none;
+	font-style: normal;
+	color: #333333;
+	margin-top: 5px;
+	background-color: #cccccc;
+	display: block;
+	width: 50px;
+	height: 17px;
+	padding-top: 0px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#notes .editor_ok_button {
+	display: none;
+}
+
+
 .item_right {
-	float: right;
+	float: right;	
 	text-align: center;
 	margin-top: 5px;
 	padding-left: 5px;

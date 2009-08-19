@@ -4,6 +4,7 @@ class CreateItems < ActiveRecord::Migration
       t.string :name
       t.text :notes
       t.string :url
+      t.boolean :old
       t.integer :user_id
 
       t.timestamps

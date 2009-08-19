@@ -10,6 +10,22 @@ class ItemsController < ApplicationController
   def index
     @items = @current_user.items.all(:order => 'created_at ASC')
     
+    for item in @items
+    
+    	if ((Time.now-item.created_at)/86400).to_int >= 30 then
+    	
+    		item.old = true
+    		item.save 
+    		
+    	else
+    	
+    		item.old = false 
+    		item.save 
+    		
+    	end
+        
+    end
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @items }
@@ -88,14 +104,12 @@ class ItemsController < ApplicationController
 
   # DELETE /items/1
   # DELETE /items/1.xml
-  def destroy
+  def delete
     @item = @current_user.items.find(params[:id])
     @item.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(items_url) }
-      format.xml  { head :ok }
-    end
+	
+    @items = @current_user.items.all(:order => 'created_at ASC')
+   
   end 
   
 end

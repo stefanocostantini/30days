@@ -1,0 +1,4 @@
+page.replace_html 'all_items', :partial => '/items/item/', :collection => @items
+page.replace_html 'total_items', pluralize(total_items,"item")
+page.replace_html 'old_items', pluralize(old_items,"item")
+

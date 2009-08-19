@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20090816164738) do
     t.string   "name"
     t.text     "notes"
     t.string   "url"
+    t.boolean  "old"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

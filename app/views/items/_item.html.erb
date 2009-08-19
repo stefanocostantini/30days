@@ -7,10 +7,11 @@
 	
 		<h2><%= @item.name %> <span id="link"><%= link_to image_tag('link.png', :border => 'none', :size => '20x20', :title => 'Visit site (opens in a new page)'), "#{@item.url}", :popup => 'true' %></span></h2> 
 	
-		<h3><%= in_place_editor_field :item, :notes %> </h3>
+		<span id="notes"><%= in_place_editor_field :item, 'notes' %> </span>
 
-		
  	</span>
+ 	
+ 	<span class="item_right_back"></span>
 	
 	<span class="item_right">
 
@@ -47,8 +48,9 @@
 				
 			<% end %>
 			
-		<span class="delete"><%= link_to image_tag('closebox.png', :border => 'none', :size => '25x25', :title => 'Delete item'), @item, :method => :delete %></span>
+		<span class="delete"><%= link_to_remote image_tag('closebox.png', :border => 'none', :size => '25x25', :title => 'Delete item'), :url => {:controller => 'items', :action => 'delete', :id => @item.id} %></span>
 
 	</span>
+	
 	
 </div>
