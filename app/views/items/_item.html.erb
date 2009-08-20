@@ -48,7 +48,7 @@
 				
 			<% end %>
 			
-		<span class="delete"><%= link_to_remote image_tag('closebox.png', :border => 'none', :size => '25x25', :title => 'Delete item'), :url => {:controller => 'items', :action => 'delete', :id => @item.id} %></span>
+		<span class="delete"><%= link_to_remote image_tag('closebox.png', :border => 'none', :size => '25x25', :title => 'Delete item'), :url => {:controller => 'items', :action => 'delete', :id => @item.id}, :loading => "Element.hide('firefox_fix')", :complete => "Element.show('firefox_fix')" %></span>
 
 	</span>
 	

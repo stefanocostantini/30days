@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Items: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body>
+
+
+	<div id="login_bar">
+	
+	
+	
+		<span id="box_back_large"></span>
+		<span id="box_front_large">
+		
+			<span id="login_logout_large"><%= yield %></span>
+			
+			<span id="logo_large">30days.</span>	
+		
+		</span>
+		
+		<span id="greybar"></span>
+	</div>
+
+	<div id="description">
+		
+		<p>30days is a web app that helps you save</p>
+		<p>a list of all the cool stuff you see online.</p><br />
+		<p>With 30days you can keep it all in one place,</p>
+		<p>let it cool off and then come back to buy it</p>
+		<p>(if you still want to, of course.)</p><br />
+		
+		<div id="slogan">30days. Wait before you buy.</div>
+		
+		<div id="signup_link">If you would like an account, 
+		
+		<%= link_to_function 'you can sign up here', update_page{ |page| page.visual_effect :toggle_blind, 'signup_form', :duration => '0.7'} %></div>
+		
+	
+	</div>
+	<br />
+	<br />
+	
+<div id="signup_form" style="display:none;">
+
+<div id="close_signup_form"><%= link_to_function image_tag('closebox.png', :size => '25x25', :border => 'none', :title => 'Close sign up form'), update_page{ |page| page.visual_effect :fade, 'signup_form', :duration => '0.7'} %></div>
+
+<% form_for :user, :url => users_path do |f| -%>
+<p><label for="login">Login</label><br/>
+<%= f.text_field :login %></p>
+
+<p><label for="email">Email</label><br/>
+<%= f.text_field :email %></p>
+
+<p><label for="password">Password</label><br/>
+<%= f.password_field :password %></p>
+
+<p><label for="password_confirmation">Confirm Password</label><br/>
+<%= f.password_field :password_confirmation %></p>
+
+<p><%= submit_tag 'Sign up' %></p>
+<% end -%>
+</div>
+
+
+</body>
+</html>

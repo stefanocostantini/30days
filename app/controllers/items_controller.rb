@@ -46,19 +46,21 @@ class ItemsController < ApplicationController
   # GET /items/new
   # GET /items/new.xml
   def new
-  
-    @item = @current_user.items.new
-    @item.name = params[:t]
-    @item.notes = "Click here to add a note"
-    @item.url = params[:u]
+       	
+   	 	@item = @current_user.items.new
+    	@item.name = params[:t]
+    	@item.notes = "Click here to add a note"
+    	@item.url = params[:u]
     
-    @item.save
+    	@item.save
     
-    redirect_to :action => 'show', :id => @item.id  
-    flash[:notice] = 'Item was successfully created.'
-  
-    
+    	redirect_to :action => 'show', :id => @item.id  
+    	flash[:notice] = 'Item was successfully created.'
+    	      
   end
+
+	def small_login
+	end
 
   # GET /items/1/edit
   def edit

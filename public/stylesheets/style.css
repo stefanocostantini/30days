@@ -12,7 +12,6 @@ body {
 #content {
 	width: 960px;
 	margin: 0 auto;
-	padding: 10px;
 	text-align: left;
 	background-color: #ffffff;
 }
@@ -93,6 +92,23 @@ h3 {
 	line-height: 35px;
 	border-top: 1px dotted #000000;
 	border-bottom: 1px dotted #000000;
+}
+
+#spinner {
+	position: relative;
+	top: 8px;
+	float: right;
+}
+
+#firefox_fix {
+	position: relative;
+	top: 8px;
+	float: right;
+	display: block;
+	width: 18px;
+	height: 18px;
+	left: 18px;
+	background-color: #ffffff;
 }
 
 #login_logout {
@@ -258,3 +274,287 @@ h3 {
 	width: 18px;
 	height: 18px;
 }
+
+#item_added {
+	position: absolute;
+	display: block;
+	width: 338px;
+	height: 200px;
+	margin: 6px;
+}
+
+#small_login_logout {
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	font-size: 12px;
+}
+
+#small_message_board {
+	position: absolute;
+	top: 90px;
+	display: block;
+	width: 338px;
+	height: 21px;
+	line-height: 20px;
+	border-top: 1px dotted #000000;
+	border-bottom: 1px dotted #000000;
+}
+
+#small_message_board a {
+	float: right;
+	font-size: 12px;
+	text-decoration: none;
+	font-style: normal;
+	color: #333333;
+	margin-top: 2px;
+	background-color: #cccccc;
+	display: block;
+	width: 110px;
+	height: 17px;
+	line-height: 17px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#item_details {
+	position: absolute;
+	top: 120px;
+}
+
+#notes_small {
+	display: block;
+	margin-top: 8px;
+	height: 60px;
+	width: 336px;
+	font-size: 13px;
+	font-style: italic;
+	color: #666666;
+	border: none;
+}
+
+#notes_small form input {
+	display: block;
+	font-size: 12px;
+	color: #666666;
+	font-style: italic;
+	width: 336px;
+	border: 1px dotted #333333;
+	height: 30px;
+}
+
+#notes_small form a {
+	text-decoration: none;
+	font-style: normal;
+	color: #333333;
+	margin-top: 5px;
+	background-color: #cccccc;
+	display: block;
+	width: 50px;
+	height: 17px;
+	padding-top: 0px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#notes_small .editor_ok_button {
+	display: none;
+}
+
+#login_bar {
+	position: relative;
+	margin-top: 20px;
+	display: block;
+	height: 240px;
+	width: 100%;
+	text-align: center;
+}
+
+#close_large {
+	position: relative;
+	clear: both;
+	top: -10px;
+	left: 120px;	
+}
+
+#greybar {
+	position: relative;
+	display: block;
+	height: 200px;
+	width: 100%;
+	background-color: #cccccc;
+	top: -480px;
+	z-index: -10;
+}
+
+#box_back_large {
+	position: relative;
+	display: block;
+	border: 1px solid #000000;
+	width: 250px;
+	height: 250px;
+	left: 5px;
+	margin: 0 auto;
+	background-color: #000000;
+}
+
+#box_front_large {
+	position: relative;
+	top: -260px;
+	left: -5px;	
+    display: block;
+	border: 1px solid black;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+#logo_large {
+	position: relative;
+	display: block;
+	width: 250px;
+	top: 46px;
+	right: 5px;
+	text-align: right;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#login_logout_large {
+	display: block;
+	position: relative;
+	width: 250px;
+	top: 20px;
+	margin: 0 auto;
+}
+
+input#login {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+input#password {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+#description {
+	position: relative;
+	top: 40px;	
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	font-size: 22px;
+	color: #888888;
+}
+
+#slogan {
+	color: #444444;
+	font-size: 27px;
+}
+
+#signup_link {
+	position: relative;
+	top: 10px;
+	font-size: 16px;
+}
+
+#signup_link a {
+	color: #888888;
+}
+
+input#user_login {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+input#user_email {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+input#user_password {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+input#user_password_confirmation {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+#signup_form {
+	position: relative;
+	top: 30px;
+	padding-bottom: 15px;
+	display: block;
+	width: 260px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#close_signup_form {
+	position: relative;
+	top: 5px;
+	left: 110px;
+	clear: right;
+
+}
+

@@ -1,21 +1,34 @@
 <div id="item_added">
-</p>
-  <b>Name:</b>
-  <%= in_place_editor_field :item, :name %>
-</p>
 
-<p>
-  <b>Notes:</b>
-  <%= in_place_editor_field :item, :notes %>
-</p>
+<div id="small header">
+<%= link_to image_tag('small_logo.png', :size => '80x80', :title => "Go to 30days.", :border => 'none'), "http://localhost:3000", :popup => true %>
+</div>
 
-<p>
-  <b>Url:</b>
-  <%=h @item.url %>
-</p>
+<div id="small_login_logout">
+
+			<% if logged_in? %>
+				Logged in as: <b><%= current_user.login %> </b>
+			<% else %>
+				No user currently logged in
+			<% end %>
+
 
 </div>
 
-<%= link_to 'See all items', items_path, :popup => 'true' %>
+<div id="small_message_board">
+	Item added.
+	
+	<a href="javascript:window.close();">Close this window</a>
+</div>
 
-<a href="javascript:window.close();">Close this window</a>
+<div id="item_details">
+<b>
+ <%= @item.name %>
+</b>
+
+<span id="notes_small"><%= in_place_editor_field :item, 'notes' %></span>
+
+
+</div>
+
+</div>
