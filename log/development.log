@@ -48320,3 +48320,575 @@ Processing AccountsController#new (for 127.0.0.1 at 2009-08-20 17:57:50) [GET]
 Rendering template within layouts/accounts
 Rendering accounts/new
 Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 18:11:45) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 62ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-20 18:11:46) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-08-20 18:12:13) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"mm/00A0gVmLKBWE2aDQNFblUAgMe3nVFUBtBTgxXydY=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 27ms (DB: 0) | 302 Found [http://localhost/account]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 18:12:13) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (1.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (4.7ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Completed in 116ms (View: 32, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2009-08-20 18:15:08) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 18:15:08) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-20 18:15:08) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-20 18:15:54) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Items: new", "u"=>"http://localhost:3000/account/new"}
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Flocalhost%3A3000%2Faccount%2Fnew&t=Items%3A%20new&s=]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-20 18:15:54) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-08-20 18:16:10) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"IRYFcY/A/QZ7/wY7dRN0n7dqsTfT6qTzdjj1HRhpBE0=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://localhost:3000/items/new?v=1&u=http%3A%2F%2Flocalhost%3A3000%2Faccount%2Fnew&t=Items%3A%20new&s=
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/account]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-20 18:16:10) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Items: new", "u"=>"http://localhost:3000/account/new"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "old", "user_id", "created_at") VALUES('Items: new', '2009-08-20 17:16:10', 'http://localhost:3000/account/new', 'Click here to add a note', NULL, 1, '2009-08-20 17:16:10')[0m
+Redirected to http://localhost:3000/items/87
+Completed in 26ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Flocalhost%3A3000%2Faccount%2Fnew&t=Items%3A%20new&s=]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-20 18:16:10) [GET]
+  Parameters: {"id"=>"87"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 87 AND ("items".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering items/show
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://localhost/items/87]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 18:16:16) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (1.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+  [4;35;1mItem Update (0.5ms)[0m   [0mUPDATE "items" SET "old" = 'f', "updated_at" = '2009-08-20 17:16:16' WHERE "id" = 87[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (1.3ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.3ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Completed in 143ms (View: 14, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 18:16:18) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (1.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.0ms)
+Completed in 42ms (View: 13, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-04-20 18:16:38) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Michael Jackson - The Hits: Michael Jackson: Amazon.co.uk: MP3 Downloads", "u"=>"http://www.amazon.co.uk/gp/product/B001HC0L7M/ref=s9_tops_gw_ir02?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=0MCM6R5FYVG7X6FK9A0N&pf_rd_t=101&pf_rd_p=471054453&pf_rd_i=468294"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO "items" ("name", "updated_at", "url", "notes", "old", "user_id", "created_at") VALUES('Michael Jackson - The Hits: Michael Jackson: Amazon.co.uk: MP3 Downloads', '2009-04-20 17:16:38', 'http://www.amazon.co.uk/gp/product/B001HC0L7M/ref=s9_tops_gw_ir02?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=0MCM6R5FYVG7X6FK9A0N&pf_rd_t=101&pf_rd_p=471054453&pf_rd_i=468294', 'Click here to add a note', NULL, 1, '2009-04-20 17:16:38')[0m
+Redirected to http://localhost:3000/items/88
+Completed in 35ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB001HC0L7M%2Fref%3Ds9_tops_gw_ir02%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-2%26pf_rd_r%3D0MCM6R5FYVG7X6FK9A0N%26pf_rd_t%3D101%26pf_rd_p%3D471054453%26pf_rd_i%3D468294&t=Michael%20Jackson%20-%20The%20Hits%3A%20Michael%20Jackson%3A%20Amazon.co.uk%3A%20MP3%20Downloads&s=]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-04-20 18:16:38) [GET]
+  Parameters: {"id"=>"88"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 88 AND ("items".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering items/show
+Completed in 29ms (View: 7, DB: 1) | 200 OK [http://localhost/items/88]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-04-20 18:16:41) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+  [4;36;1mItem Update (0.5ms)[0m   [0;1mUPDATE "items" SET "old" = 'f', "updated_at" = '2009-04-20 17:16:41' WHERE "id" = 88[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.3ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Completed in 45ms (View: 14, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-16 18:16:56) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Play.com (UK) : 17 Again : DVD - Free Delivery", "u"=>"http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "old", "user_id", "created_at") VALUES('Play.com (UK) : 17 Again : DVD - Free Delivery', '2009-08-16 17:16:56', 'http://www.play.com/DVD/DVD/4-/9545331/17-Again/Product.html', 'Click here to add a note', NULL, 1, '2009-08-16 17:16:56')[0m
+Redirected to http://localhost:3000/items/89
+Completed in 151ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.play.com%2FDVD%2FDVD%2F4-%2F9545331%2F17-Again%2FProduct.html&t=Play.com%20(UK)%20%3A%2017%20Again%20%3A%20DVD%20-%20Free%20Delivery&s=]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-16 18:16:56) [GET]
+  Parameters: {"id"=>"89"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 89 AND ("items".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering items/show
+Completed in 28ms (View: 6, DB: 2) | 200 OK [http://localhost/items/89]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-16 18:16:59) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (1.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+  [4;35;1mItem Update (0.5ms)[0m   [0mUPDATE "items" SET "old" = 't', "updated_at" = '2009-08-16 17:16:59' WHERE "id" = 88[0m
+  [4;36;1mItem Update (0.5ms)[0m   [0;1mUPDATE "items" SET "old" = 'f', "updated_at" = '2009-08-16 17:16:59' WHERE "id" = 89[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Completed in 60ms (View: 15, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 18:17:15) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (1.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.3ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.0ms)
+Completed in 45ms (View: 16, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2009-08-20 18:17:25) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 18:17:25) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-20 18:17:26) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 19:51:12) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 81ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-20 19:51:12) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-08-20 19:52:21) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"5YxBI4uvamOv7SmnQH4Cx8hqq5zYwW0J9FTWBRFeQ4M=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 26ms (DB: 0) | 302 Found [http://localhost/account]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 19:52:21) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (3.0ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (4.9ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.5ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (2.3ms)
+Rendered items/_item (1.3ms)
+Rendered items/_item (1.2ms)
+Completed in 131ms (View: 39, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-20 19:53:01) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Michael Jackson - The Hits: Michael Jackson: Amazon.co.uk: MP3 Downloads", "u"=>"http://www.amazon.co.uk/gp/product/B001HC0L7M/ref=s9_tops_gw_ir02?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=0MCM6R5FYVG7X6FK9A0N&pf_rd_t=101&pf_rd_p=471054453&pf_rd_i=468294"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "old", "user_id", "created_at") VALUES('Michael Jackson - The Hits: Michael Jackson: Amazon.co.uk: MP3 Downloads', '2009-08-20 18:53:01', 'http://www.amazon.co.uk/gp/product/B001HC0L7M/ref=s9_tops_gw_ir02?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-2&pf_rd_r=0MCM6R5FYVG7X6FK9A0N&pf_rd_t=101&pf_rd_p=471054453&pf_rd_i=468294', 'Click here to add a note', NULL, 1, '2009-08-20 18:53:01')[0m
+Redirected to http://localhost:3000/items/90
+Completed in 36ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2FB001HC0L7M%2Fref%3Ds9_tops_gw_ir02%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-2%26pf_rd_r%3D0MCM6R5FYVG7X6FK9A0N%26pf_rd_t%3D101%26pf_rd_p%3D471054453%26pf_rd_i%3D468294&t=Michael%20Jackson%20-%20The%20Hits%3A%20Michael%20Jackson%3A%20Amazon.co.uk%3A%20MP3%20Downloads&s=]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-20 19:53:01) [GET]
+  Parameters: {"id"=>"90"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 90 AND ("items".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering items/show
+Completed in 32ms (View: 11, DB: 1) | 200 OK [http://localhost/items/90]
+
+
+Processing ItemsController#set_item_notes (for 127.0.0.1 at 2009-08-20 19:53:07) [POST]
+  Parameters: {"authenticity_token"=>"5YxBI4uvamOv7SmnQH4Cx8hqq5zYwW0J9FTWBRFeQ4M=", "id"=>"90", "value"=>"daks;dja;k asdasd", "editorId"=>"item_notes_90_in_place_editor", "_"=>""}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 90) [0m
+  [4;35;1mItem Update (0.5ms)[0m   [0mUPDATE "items" SET "notes" = 'daks;dja;k asdasd', "updated_at" = '2009-08-20 18:53:07' WHERE "id" = 90[0m
+Completed in 37ms (View: 1, DB: 1) | 200 OK [http://localhost/items/set_item_notes/90]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 19:53:10) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (2.0ms)[0m   [0mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+  [4;36;1mItem Update (0.5ms)[0m   [0;1mUPDATE "items" SET "old" = 'f', "updated_at" = '2009-08-20 18:53:10' WHERE "id" = 90[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (1.3ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.1ms)
+Completed in 53ms (View: 17, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#delete (for 127.0.0.1 at 2009-08-20 19:53:27) [POST]
+  Parameters: {"authenticity_token"=>"5YxBI4uvamOv7SmnQH4Cx8hqq5zYwW0J9FTWBRFeQ4M=", "id"=>"84", "_"=>""}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 84 AND ("items".user_id = 1)) [0m
+  [4;35;1mItem Destroy (0.4ms)[0m   [0mDELETE FROM "items" WHERE "id" = 84[0m
+  [4;36;1mItem Load (1.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering items/delete
+Rendered items/_item (3.3ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Completed in 131ms (View: 109, DB: 3) | 200 OK [http://localhost/items/delete/84]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2009-08-20 19:53:38) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 19:53:38) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-20 19:53:38) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-20 19:53:46) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Currys - Shop for Washing Machines - Beko WM5140S Silver 1400 Spin Washing Machine", "u"=>"http://www.currys.co.uk/martprd/product/seo/634887"}
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.currys.co.uk%2Fmartprd%2Fproduct%2Fseo%2F634887&t=Currys%20-%20Shop%20for%20Washing%20Machines%20-%20Beko%20WM5140S%20Silver%201400%20Spin%20Washing%20Machine&s=]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-20 19:53:46) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-08-20 19:53:52) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"40d5ZLT71LuyEYc3NDNNWMNwnNoE0JOLC+XEWIo1Bnw=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://localhost:3000/items/new?v=1&u=http%3A%2F%2Fwww.currys.co.uk%2Fmartprd%2Fproduct%2Fseo%2F634887&t=Currys%20-%20Shop%20for%20Washing%20Machines%20-%20Beko%20WM5140S%20Silver%201400%20Spin%20Washing%20Machine&s=
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/account]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-08-20 19:53:52) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Currys - Shop for Washing Machines - Beko WM5140S Silver 1400 Spin Washing Machine", "u"=>"http://www.currys.co.uk/martprd/product/seo/634887"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "updated_at", "url", "notes", "old", "user_id", "created_at") VALUES('Currys - Shop for Washing Machines - Beko WM5140S Silver 1400 Spin Washing Machine', '2009-08-20 18:53:52', 'http://www.currys.co.uk/martprd/product/seo/634887', 'Click here to add a note', NULL, 1, '2009-08-20 18:53:52')[0m
+Redirected to http://localhost:3000/items/91
+Completed in 35ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.currys.co.uk%2Fmartprd%2Fproduct%2Fseo%2F634887&t=Currys%20-%20Shop%20for%20Washing%20Machines%20-%20Beko%20WM5140S%20Silver%201400%20Spin%20Washing%20Machine&s=]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-08-20 19:53:52) [GET]
+  Parameters: {"id"=>"91"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 91 AND ("items".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering items/show
+Completed in 23ms (View: 5, DB: 1) | 200 OK [http://localhost/items/91]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 19:53:56) [GET]
+  [4;35;1mUser Load (3.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (2.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+  [4;35;1mItem Update (0.5ms)[0m   [0mUPDATE "items" SET "old" = 'f', "updated_at" = '2009-08-20 18:53:56' WHERE "id" = 91[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (1.4ms)
+Rendered items/_item (1.4ms)
+Rendered items/_item (1.7ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Rendered items/_item (1.0ms)
+Completed in 170ms (View: 18, DB: 7) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#delete (for 127.0.0.1 at 2009-08-20 19:54:03) [POST]
+  Parameters: {"authenticity_token"=>"40d5ZLT71LuyEYc3NDNNWMNwnNoE0JOLC+XEWIo1Bnw=", "id"=>"87", "_"=>""}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 87 AND ("items".user_id = 1)) [0m
+  [4;36;1mItem Destroy (0.4ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 87[0m
+  [4;35;1mItem Load (1.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering items/delete
+Rendered items/_item (2.9ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Completed in 47ms (View: 23, DB: 3) | 200 OK [http://localhost/items/delete/87]
+
+
+Processing ItemsController#delete (for 127.0.0.1 at 2009-08-20 19:54:35) [POST]
+  Parameters: {"authenticity_token"=>"40d5ZLT71LuyEYc3NDNNWMNwnNoE0JOLC+XEWIo1Bnw=", "id"=>"90", "_"=>""}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 90 AND ("items".user_id = 1)) [0m
+  [4;36;1mItem Destroy (0.4ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 90[0m
+  [4;35;1mItem Load (2.0ms)[0m   [0mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering items/delete
+Rendered items/_item (3.5ms)
+Rendered items/_item (2.2ms)
+Rendered items/_item (1.5ms)
+Rendered items/_item (1.4ms)
+Rendered items/_item (1.4ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.2ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Completed in 58ms (View: 24, DB: 4) | 200 OK [http://localhost/items/delete/90]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 19:55:26) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-20 19:55:27) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-08-20 19:55:31) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"crV3pFN6Ye0jqnANmbsRwShyuusqWOcR94+vmqsriFA=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 27ms (DB: 0) | 302 Found [http://localhost/account]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-20 19:55:31) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (1.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (4.9ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Completed in 119ms (View: 35, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-21 21:07:38) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 137ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-21 21:07:42) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 882ms (View: 880, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-08-21 21:07:52) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Bpo5n9ClkaYtEsUBwFz/VUxPrCnhoZQD1u42qeXOxQc=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (17.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 115ms (DB: 18) | 302 Found [http://localhost/account]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-21 21:07:52) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (2.0ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (10.4ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Completed in 288ms (View: 111, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-24 20:54:15) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 226ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-24 20:54:16) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 190ms (View: 188, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-08-24 20:54:26) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"WhJp/EjkDhk8ooCXl3xYKAsj3CqS+UbBAoiWrh7bLGw=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (20.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 395ms (DB: 21) | 302 Found [http://localhost/account]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-24 20:54:27) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (6.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (12.4ms)
+Rendered items/_item (1.2ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Rendered items/_item (1.1ms)
+Completed in 787ms (View: 186, DB: 8) | 200 OK [http://localhost/]
+
+
+Processing AccountsController#destroy (for 127.0.0.1 at 2009-08-24 20:54:42) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-08-24 20:54:42) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-08-24 20:54:42) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/account/new]
