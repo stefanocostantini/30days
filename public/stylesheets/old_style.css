@@ -1,0 +1,560 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+	text-align: center;
+	background-color: #ffffff;
+	font-family: "Helvetica", "Arial",  sans-serif;
+}
+
+#content {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #ffffff;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 17px;
+}
+
+h3 {
+	font-size: 14px;
+	font-style: italic;
+}
+
+#link img {
+	position: relative;	
+	top: 4px;
+	line-height: 20px;
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+}
+
+#header {
+	display: block;
+	height: 120px;
+}
+
+#box_front {
+	position: relative;
+	top: -100px;
+	left: 15px;
+	display: block;
+	width: 110px;
+	height: 110px;
+	border: 1px solid #000000;
+	z-index: 10;
+	background-color: #ffffff;
+}
+
+#box_front span {
+	position: relative;
+	font-weight: bold;
+	font-size: 18px;
+	top: 88px;
+	display: block;
+	text-align: right;
+	padding-right: 3px;
+}
+
+#box_back {
+	position: relative;
+	top: 17px;
+	left: 20px;
+	display: block;
+	width: 110px;
+	height: 110px;
+	border: 1px solid #000000;
+	background-color: #000000;
+	z-index: 1;
+}
+
+#message_board {
+	position: relative;
+	display: block;
+	width: 925px;
+	top: 10px;
+	left: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 35px;
+	line-height: 35px;
+	border-top: 1px dotted #000000;
+	border-bottom: 1px dotted #000000;
+}
+
+#spinner {
+	position: relative;
+	top: 8px;
+	float: right;
+}
+
+#firefox_fix {
+	position: relative;
+	top: 8px;
+	float: right;
+	display: block;
+	width: 18px;
+	height: 18px;
+	left: 18px;
+	background-color: #ffffff;
+}
+
+#login_logout {
+	position: relative;
+	display: block;
+	float: right;
+	clear: left;
+	top: 12px;
+	right: 20px;
+	text-align: right;
+	color: #333333;
+	font-size: 14px;
+
+}
+
+#bookmarklet {
+	position: relative;
+	float: right;
+	display: block;
+	top: -18px;
+	left: -20px;
+	height: 20px;
+	width: 220px;
+	font-size: 12px;
+	line-height: 20px;
+
+}
+
+#bookmarklet a {
+	float: right;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333333;
+	display: block;
+	background-color: #cccccc;
+	font-size: 11px;
+	width: 75px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.item {
+	width: 930px;
+	margin-left: 12px;
+	margin-bottom: 15px;
+	min-height: 120px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #000000;
+}
+
+.item_left {
+	float: left;
+	margin-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 800px;
+	height: 110px;
+}
+
+#notes {
+	display: block;
+	margin-top: 8px;
+	height: 60px;
+	width: 800px;
+	font-size: 13px;
+	font-style: italic;
+	color: #666666;
+	border: none;
+}
+
+#notes form input {
+	display: block;
+	font-size: 12px;
+	color: #666666;
+	font-style: italic;
+	width: 800px;
+	border: 1px dotted #333333;
+	height: 30px;
+}
+
+#notes form a {
+	text-decoration: none;
+	font-style: normal;
+	color: #333333;
+	margin-top: 5px;
+	background-color: #cccccc;
+	display: block;
+	width: 50px;
+	height: 17px;
+	padding-top: 0px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#notes .editor_ok_button {
+	display: none;
+}
+
+
+.item_right {
+	float: right;	
+	text-align: center;
+	margin-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	width: 100px;
+	height: 90px;
+	border: 1px solid black;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.days_top {
+	position: relative;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	font-size: 15px;
+}
+
+.days_middle {
+	position: relative;
+	display: block;
+	font-weight: bold;
+	top: -18px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 35px;
+}
+
+.days_middle_red {
+	position: relative;
+	color: #ff0000;
+	display: block;
+	font-weight: bold;
+	top: -18px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 35px;
+}
+
+.days_bottom {
+	position: relative;
+	display: block;
+	height: 25px;
+	top: -37px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 15px;
+}
+
+.delete {
+	position: relative;
+	display: block;
+	right: -92px;
+	top: -132px;
+	width: 18px;
+	height: 18px;
+}
+
+#item_added {
+	position: absolute;
+	display: block;
+	width: 338px;
+	height: 200px;
+	margin: 6px;
+}
+
+#small_login_logout {
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	font-size: 12px;
+}
+
+#small_message_board {
+	position: absolute;
+	top: 90px;
+	display: block;
+	width: 338px;
+	height: 21px;
+	line-height: 20px;
+	border-top: 1px dotted #000000;
+	border-bottom: 1px dotted #000000;
+}
+
+#small_message_board a {
+	float: right;
+	font-size: 12px;
+	text-decoration: none;
+	font-style: normal;
+	color: #333333;
+	margin-top: 2px;
+	background-color: #cccccc;
+	display: block;
+	width: 110px;
+	height: 17px;
+	line-height: 17px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#item_details {
+	position: absolute;
+	top: 120px;
+}
+
+#notes_small {
+	display: block;
+	margin-top: 8px;
+	height: 60px;
+	width: 336px;
+	font-size: 13px;
+	font-style: italic;
+	color: #666666;
+	border: none;
+}
+
+#notes_small form input {
+	display: block;
+	font-size: 12px;
+	color: #666666;
+	font-style: italic;
+	width: 336px;
+	border: 1px dotted #333333;
+	height: 30px;
+}
+
+#notes_small form a {
+	text-decoration: none;
+	font-style: normal;
+	color: #333333;
+	margin-top: 5px;
+	background-color: #cccccc;
+	display: block;
+	width: 50px;
+	height: 17px;
+	padding-top: 0px;
+	text-align: center;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#notes_small .editor_ok_button {
+	display: none;
+}
+
+#login_bar {
+	position: relative;
+	margin-top: 20px;
+	display: block;
+	height: 240px;
+	width: 100%;
+	text-align: center;
+}
+
+#close_large {
+	position: relative;
+	clear: both;
+	top: -10px;
+	left: 120px;	
+}
+
+#greybar {
+	position: relative;
+	display: block;
+	height: 200px;
+	width: 100%;
+	background-color: #cccccc;
+	top: -480px;
+	z-index: -10;
+}
+
+#box_back_large {
+	position: relative;
+	display: block;
+	border: 1px solid #000000;
+	width: 250px;
+	height: 250px;
+	left: 5px;
+	margin: 0 auto;
+	background-color: #000000;
+}
+
+#box_front_large {
+	position: relative;
+	top: -260px;
+	left: -5px;	
+    display: block;
+	border: 1px solid black;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+#logo_large {
+	position: relative;
+	display: block;
+	width: 250px;
+	top: 46px;
+	right: 5px;
+	text-align: right;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#login_logout_large {
+	display: block;
+	position: relative;
+	width: 250px;
+	top: 20px;
+	margin: 0 auto;
+}
+
+input#login {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+input#password {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+#description {
+	position: relative;
+	top: 40px;	
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	font-size: 22px;
+	color: #888888;
+}
+
+#slogan {
+	color: #444444;
+	font-size: 27px;
+}
+
+#signup_link {
+	position: relative;
+	top: 10px;
+	font-size: 16px;
+}
+
+#signup_link a {
+	color: #888888;
+}
+
+input#user_login {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+input#user_email {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+input#user_password {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+input#user_password_confirmation {
+	width: 225px;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px dotted #333333;
+	text-align: center;
+}
+
+#signup_form {
+	position: relative;
+	top: 30px;
+	padding-bottom: 15px;
+	display: block;
+	width: 260px;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#close_signup_form {
+	position: relative;
+	top: 5px;
+	left: 110px;
+	clear: right;
+
+}
+
