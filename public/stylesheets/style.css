@@ -62,3 +62,21 @@ body {
 #login_logout a {
 	color: #ffffff;
 }
+
+#info {
+	color: #ffffff;
+	position: relative;
+	float: right;
+	clear: left;
+	height: 20px;
+	width: 20px;
+	line-height: 18px;	
+	font-size: 15px;
+	top: -115px;
+	right: 7px;
+	text-align: center;
+	font-weight: bold;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background-color: #666666;
+}
