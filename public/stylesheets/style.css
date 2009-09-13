@@ -8,11 +8,16 @@
 	src: url(/fonts/YanoneKaffeesatz-Thin.otf) format("opentype");
 }
 
+@font-face {
+	font-family: Museo;
+	src: url(/fonts/Museo300-Regular.otf) format("opentype");
+}
+
 body {
 	text-align: center;
 	font-weight: bold;
 	background-color: #c0c0c0;
-	font-family:"Yanone",Verdana, Arial, Helvetica, sans-serif;
+	font-family:"Museo",Verdana, Arial, Helvetica, sans-serif;
 }
 
 #content {
