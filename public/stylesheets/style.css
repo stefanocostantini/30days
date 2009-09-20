@@ -88,7 +88,78 @@ body {
 	
 }
 
-#bookmarklet {
+#all_items {
 	position: relative;
-	top: 100px;
+	top: 20px;
+}
+
+.item {
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+	border-right: 2px solid #ffffff;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomright: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 25px;
+	margin-top: 10px;
+	background-color: #999999;
+	min-height: 90px;
+}
+
+#item_data {
+	position: relative;
+	float: left;
+}
+
+.status {
+	position: relative;
+	float: right;
+	border-left: 2px solid #ffffff;
+	top: -10px;
+	height: 110px;
+	width: 35px;
+	left: 30px;
+	clear: right;
+	background-color: #000000;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomright: 20px;
+}
+
+#traffic_light {
+	width: 10px;
+	height: 10px;
+	display: block;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: #c21c1b;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	border-top: 1px solid #ffffff;
+	background-color: #333333;
+}
+
+#bookmarklet {
+	height: 100px;
 }
