@@ -4,11 +4,6 @@
 }
 
 @font-face {
-    font-family: Yanone;
-	src: url(/fonts/YanoneKaffeesatz-Thin.otf) format("opentype");
-}
-
-@font-face {
 	font-family: Museo;
 	src: url(/fonts/Museo300-Regular.otf) format("opentype");
 }
@@ -17,25 +12,23 @@ body {
 	text-align: center;
 	font-weight: bold;
 	background-color: #c0c0c0;
-	font-family:"Museo",Verdana, Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 #content {
-	width: 960px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: left;
 	background-color: #c0c0c0;
 }
 
-#spacer {
-	background-color: #c0c0c0;
-	height: 20px;
-}
 
 #header {
 	background-color: #222222;
 	height: 120px;
-	border: 2px solid #ffffff;
+	width: 100%;
+	border-bottom: 2px solid #ffffff;
+	font-family: "Museo", Helvetica, Arial, sans-serif;
 }
 
 #logo {
@@ -45,7 +38,7 @@ body {
 	height: 120px;
 	line-height: 120px;
 	width: 250px;
-	left: 10px;
+	left: 30px;
 	color: #ffffff;
 }
 
@@ -54,7 +47,7 @@ body {
 	float: right;
 	color: white;
 	font-size: 20px;
-	right: 10px;
+	right: 30px;
 	height: 120px;
 	line-height: 120px;	
 }
@@ -63,20 +56,39 @@ body {
 	color: #ffffff;
 }
 
-#info {
-	color: #ffffff;
+#message_board {
+	position: relative;
+	width: 100%;
+	height: 35px;
+	top: 10px;
+	background-color: #999999;
+}
+
+#message {
+	position: relative;
+	left: 30px;
+	line-height: 35px;
+}
+
+#spinner {
 	position: relative;
 	float: right;
-	clear: left;
-	height: 20px;
-	width: 20px;
-	line-height: 18px;	
-	font-size: 15px;
-	top: -115px;
-	right: 7px;
-	text-align: center;
-	font-weight: bold;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	background-color: #666666;
+	right: 30px;
+	top: 8px;
+	line-height: 35px;
+}
+
+#firefox_fix {
+	position: relative;
+	float: right;
+	right: 3px;
+	width: 35px;
+	height: 35px;
+	background-color: #999999;
+	
+}
+
+#bookmarklet {
+	position: relative;
+	top: 100px;
 }

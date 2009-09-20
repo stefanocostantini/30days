@@ -52900,3 +52900,1028 @@ Rendered items/_item (1.1ms)
 Rendered items/_item (1.0ms)
 Rendered items/_item (1.0ms)
 Completed in 46ms (View: 13, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:39:36) [GET]
+Redirected to http://localhost:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-09-20 19:39:36) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 123ms (View: 120, DB: 0) | 200 OK [http://localhost/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-09-20 19:39:41) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"HdiRQCSPEoLjZCfW2G3JPwIAh0QN07n/WWrPDdeTeiQ=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (8.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 98ms (DB: 8) | 302 Found [http://localhost/account]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:39:41) [GET]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (34.5ms)
+Rendered items/_item (6.0ms)
+Rendered items/_item (5.9ms)
+Rendered items/_item (5.6ms)
+Completed in 272ms (View: 128, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:47:04) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.0ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.4ms)
+Rendered items/_item (5.4ms)
+Completed in 59ms (View: 32, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:47:34) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.4ms)
+Rendered items/_item (5.5ms)
+Completed in 59ms (View: 32, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:48:17) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.8ms)
+Rendered items/_item (5.5ms)
+Completed in 66ms (View: 39, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:48:30) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.1ms)
+Rendered items/_item (5.6ms)
+Rendered items/_item (5.4ms)
+Rendered items/_item (5.4ms)
+Completed in 61ms (View: 34, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:48:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Rendered items/_item (5.8ms)
+Rendered items/_item (5.6ms)
+Rendered items/_item (5.5ms)
+Completed in 60ms (View: 34, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:48:41) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.9ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.9ms)
+Rendered items/_item (5.5ms)
+Completed in 60ms (View: 33, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:48:50) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (8.0ms)
+Rendered items/_item (5.9ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.5ms)
+Completed in 60ms (View: 34, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:49:18) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.6ms)
+Rendered items/_item (5.6ms)
+Completed in 67ms (View: 40, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:50:23) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.4ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.6ms)
+Completed in 71ms (View: 45, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:50:32) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.9ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.4ms)
+Completed in 60ms (View: 34, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:50:56) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.4ms)
+Completed in 59ms (View: 32, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:51:03) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (6.2ms)
+Rendered items/_item (5.7ms)
+Rendered items/_item (5.4ms)
+Completed in 61ms (View: 34, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:51:16) [GET]
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.8ms)
+Rendered items/_item (5.6ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.5ms)
+Completed in 63ms (View: 34, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:51:26) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.9ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.1ms)
+Rendered items/_item (6.1ms)
+Rendered items/_item (6.2ms)
+Rendered items/_item (7.1ms)
+Completed in 64ms (View: 37, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:51:34) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.6ms)
+Rendered items/_item (6.1ms)
+Rendered items/_item (5.5ms)
+Completed in 59ms (View: 33, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:51:39) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.6ms)
+Completed in 60ms (View: 34, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:51:45) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.0ms)
+Rendered items/_item (6.1ms)
+Rendered items/_item (5.6ms)
+Rendered items/_item (5.6ms)
+Completed in 60ms (View: 34, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:51:58) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.4ms)
+Rendered items/_item (5.6ms)
+Completed in 59ms (View: 32, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:52:04) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.1ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.5ms)
+Rendered items/_item (5.5ms)
+Completed in 58ms (View: 32, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#delete (for 127.0.0.1 at 2009-09-20 19:53:21) [POST]
+  Parameters: {"authenticity_token"=>"HdiRQCSPEoLjZCfW2G3JPwIAh0QN07n/WWrPDdeTeiQ=", "id"=>"96", "_"=>""}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 96 AND ("items".user_id = 1)) [0m
+  [4;35;1mItem Destroy (0.5ms)[0m   [0mDELETE FROM "items" WHERE "id" = 96[0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering items/delete
+Rendered items/_item (8.4ms)
+Rendered items/_item (5.7ms)
+Rendered items/_item (5.7ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Completed in 88ms (View: 54, DB: 3) | 200 OK [http://localhost/items/delete/96]
+
+
+Processing ItemsController#delete (for 127.0.0.1 at 2009-09-20 19:53:24) [POST]
+  Parameters: {"authenticity_token"=>"HdiRQCSPEoLjZCfW2G3JPwIAh0QN07n/WWrPDdeTeiQ=", "id"=>"97", "_"=>""}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 97 AND ("items".user_id = 1)) [0m
+  [4;35;1mItem Destroy (0.4ms)[0m   [0mDELETE FROM "items" WHERE "id" = 97[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering items/delete
+Rendered items/_item (8.7ms)
+Rendered items/_item (5.7ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Completed in 44ms (View: 20, DB: 2) | 200 OK [http://localhost/items/delete/97]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:53:48) [GET]
+Redirected to http://127.0.0.1:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-09-20 19:53:49) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://127.0.0.1/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-09-20 19:53:54) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"fNwRRaB3e7FpZnXyWg9Acm2Mi2iK4d3PeKiSWUsLwbY=", "login"=>"stefano", "password"=>"kiruna77"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 32ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/account]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-09-20 19:54:01) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"fNwRRaB3e7FpZnXyWg9Acm2Mi2iK4d3PeKiSWUsLwbY=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 24ms (DB: 0) | 302 Found [http://127.0.0.1/account]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:54:02) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.4ms)
+Rendered items/_item (6.5ms)
+Completed in 48ms (View: 24, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:56:24) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.7ms)
+Completed in 45ms (View: 22, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 19:56:42) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.1ms)
+Rendered items/_item (6.4ms)
+Completed in 46ms (View: 23, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:19:51) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.8ms)
+Rendered items/_item (6.3ms)
+Completed in 47ms (View: 23, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:21:11) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.9ms)
+Completed in 48ms (View: 22, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:21:20) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (8.3ms)
+Rendered items/_item (6.6ms)
+Completed in 48ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:21:39) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (6.1ms)
+Completed in 46ms (View: 22, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:23:35) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.6ms)
+Completed in 46ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:24:19) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.9ms)
+Rendered items/_item (5.6ms)
+Completed in 54ms (View: 28, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:24:48) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Rendered items/_item (5.5ms)
+Completed in 46ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:25:00) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.6ms)
+Completed in 133ms (View: 28, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-20 20:25:27) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-20 20:25:46) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:26:01) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.6ms)
+Rendered items/_item (5.5ms)
+Completed in 45ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:26:31) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Rendered items/_item (5.4ms)
+Completed in 51ms (View: 27, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:26:52) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.5ms)
+Completed in 46ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:26:58) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Rendered items/_item (5.5ms)
+Completed in 45ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:27:07) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Rendered items/_item (5.7ms)
+Completed in 45ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:27:17) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.9ms)
+Rendered items/_item (8.6ms)
+Completed in 57ms (View: 32, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:27:29) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Rendered items/_item (5.6ms)
+Completed in 45ms (View: 21, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:27:42) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Rendered items/_item (5.5ms)
+Completed in 46ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:27:52) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.9ms)
+Rendered items/_item (87.4ms)
+Completed in 130ms (View: 104, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#delete (for 127.0.0.1 at 2009-09-20 20:27:58) [POST]
+  Parameters: {"authenticity_token"=>"HdiRQCSPEoLjZCfW2G3JPwIAh0QN07n/WWrPDdeTeiQ=", "id"=>"95", "_"=>""}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 95 AND ("items".user_id = 1)) [0m
+  [4;35;1mItem Destroy (0.4ms)[0m   [0mDELETE FROM "items" WHERE "id" = 95[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering items/delete
+Rendered items/_item (10.3ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Completed in 49ms (View: 15, DB: 2) | 200 OK [http://localhost/items/delete/95]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:29:31) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Completed in 38ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:29:32) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (8.8ms)
+Completed in 42ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:30:23) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.9ms)
+Completed in 39ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:30:36) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (9.5ms)
+Completed in 44ms (View: 19, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:30:43) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Completed in 39ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:30:49) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.7ms)
+Completed in 39ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:30:59) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.1ms)
+Completed in 115ms (View: 16, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:31:03) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.9ms)
+Completed in 39ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:33:08) [GET]
+Redirected to http://127.0.0.1:3000/account/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://127.0.0.1/]
+
+
+Processing AccountsController#new (for 127.0.0.1 at 2009-09-20 20:33:08) [GET]
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://127.0.0.1/account/new]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-09-20 20:33:12) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ryx3Jq4ZGI0g4hK5pPUIbpyxDByJc6Q7toEbiV0X808=", "login"=>"stefano", "password"=>"kiruna77"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Rendering template within layouts/accounts
+Rendering accounts/new
+Completed in 33ms (View: 18, DB: 0) | 200 OK [http://127.0.0.1/account]
+
+
+Processing AccountsController#create (for 127.0.0.1 at 2009-09-20 20:33:16) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ryx3Jq4ZGI0g4hK5pPUIbpyxDByJc6Q7toEbiV0X808=", "login"=>"stefano", "password"=>"kiruna"}
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'stefano') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 17ms (DB: 1) | 302 Found [http://127.0.0.1/account]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:33:16) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Completed in 51ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:34:03) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.9ms)
+Completed in 39ms (View: 15, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:34:17) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (8.6ms)
+Completed in 50ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:34:25) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Completed in 54ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:34:33) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (10.4ms)
+Completed in 49ms (View: 19, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:34:50) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.9ms)
+Completed in 45ms (View: 18, DB: 1) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:35:12) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.8ms)
+Completed in 57ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:35:21) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.9ms)
+Completed in 50ms (View: 20, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:35:25) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.1ms)
+Completed in 126ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:35:32) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.0ms)
+Completed in 47ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:35:35) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (1.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.1ms)
+Completed in 56ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:35:46) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (8.2ms)
+Completed in 54ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-09-20 20:36:07) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Items: index", "u"=>"http://127.0.0.1:3000/"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Create (6.1ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "notes", "updated_at", "url", "user_id", "old") VALUES('Items: index', '2009-09-20 19:36:07', 'Click here to add a note', '2009-09-20 19:36:07', 'http://127.0.0.1:3000/', 1, NULL)[0m
+Redirected to http://127.0.0.1:3000/items/98
+Completed in 151ms (DB: 7) | 302 Found [http://127.0.0.1/items/new?v=1&u=http%3A%2F%2F127.0.0.1%3A3000%2F&t=Items%3A%20index&s=]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-09-20 20:36:07) [GET]
+  Parameters: {"id"=>"98"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 98 AND ("items".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering items/show
+Completed in 73ms (View: 54, DB: 1) | 200 OK [http://127.0.0.1/items/98]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:36:12) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+  [4;35;1mItem Update (0.6ms)[0m   [0mUPDATE "items" SET "updated_at" = '2009-09-20 19:36:12', "old" = 'f' WHERE "id" = 98[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.1ms)
+Rendered items/_item (6.5ms)
+Completed in 69ms (View: 23, DB: 3) | 200 OK [http://127.0.0.1/]
+
+
+Processing ItemsController#delete (for 127.0.0.1 at 2009-09-20 20:36:16) [POST]
+  Parameters: {"authenticity_token"=>"ryx3Jq4ZGI0g4hK5pPUIbpyxDByJc6Q7toEbiV0X808=", "id"=>"98"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 98 AND ("items".user_id = 1)) [0m
+  [4;36;1mItem Destroy (0.4ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 98[0m
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering items/delete
+Rendered items/_item (9.3ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Completed in 48ms (View: 15, DB: 3) | 200 OK [http://127.0.0.1/items/delete/98]
+
+
+Processing ItemsController#set_item_notes (for 127.0.0.1 at 2009-09-20 20:36:25) [POST]
+  Parameters: {"authenticity_token"=>"ryx3Jq4ZGI0g4hK5pPUIbpyxDByJc6Q7toEbiV0X808=", "id"=>"92", "value"=>"Thes", "editorId"=>"item_notes_92_in_place_editor"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 92) [0m
+  [4;36;1mItem Update (0.5ms)[0m   [0;1mUPDATE "items" SET "updated_at" = '2009-09-20 19:36:25', "notes" = 'Thes' WHERE "id" = 92[0m
+Completed in 70ms (View: 1, DB: 1) | 200 OK [http://127.0.0.1/items/set_item_notes/92]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:36:38) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.9ms)
+Completed in 40ms (View: 16, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#delete (for 127.0.0.1 at 2009-09-20 20:36:40) [POST]
+  Parameters: {"authenticity_token"=>"HdiRQCSPEoLjZCfW2G3JPwIAh0QN07n/WWrPDdeTeiQ=", "id"=>"92", "_"=>""}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 92 AND ("items".user_id = 1)) [0m
+  [4;35;1mItem Destroy (0.4ms)[0m   [0mDELETE FROM "items" WHERE "id" = 92[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering items/delete
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Completed in 38ms (View: 3, DB: 2) | 200 OK [http://localhost/items/delete/92]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-09-20 20:36:53) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Items: index", "u"=>"http://localhost:3000/"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO "items" ("name", "created_at", "notes", "updated_at", "url", "user_id", "old") VALUES('Items: index', '2009-09-20 19:36:53', 'Click here to add a note', '2009-09-20 19:36:53', 'http://localhost:3000/', 1, NULL)[0m
+Redirected to http://localhost:3000/items/99
+Completed in 26ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Flocalhost%3A3000%2F&t=Items%3A%20index&s=]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-09-20 20:36:53) [GET]
+  Parameters: {"id"=>"99"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 99 AND ("items".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering items/show
+Completed in 30ms (View: 9, DB: 1) | 200 OK [http://localhost/items/99]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:36:56) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+  [4;35;1mItem Update (0.4ms)[0m   [0mUPDATE "items" SET "updated_at" = '2009-09-20 19:36:56', "old" = 'f' WHERE "id" = 99[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (6.2ms)
+Completed in 50ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-09-20 20:37:07) [GET]
+  Parameters: {"v"=>"1", "s"=>"", "t"=>"Born to Run: The hidden tribe, the ultra-runners, and the greatest race the world has never seen: The Rise of Ultra-running and the Super-athlete Tribe: Amazon.co.uk: Christopher McDougall: Books", "u"=>"http://www.amazon.co.uk/gp/product/1861978235/ref=s9_sima_gw_s1_p14_i1?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=01QAH6G2YG7YRZTNYWF0&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO "items" ("name", "created_at", "notes", "updated_at", "url", "user_id", "old") VALUES('Born to Run: The hidden tribe, the ultra-runners, and the greatest race the world has never seen: The Rise of Ultra-running and the Super-athlete Tribe: Amazon.co.uk: Christopher McDougall: Books', '2009-09-20 19:37:07', 'Click here to add a note', '2009-09-20 19:37:07', 'http://www.amazon.co.uk/gp/product/1861978235/ref=s9_sima_gw_s1_p14_i1?pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=center-1&pf_rd_r=01QAH6G2YG7YRZTNYWF0&pf_rd_t=101&pf_rd_p=467198433&pf_rd_i=468294', 1, NULL)[0m
+Redirected to http://localhost:3000/items/100
+Completed in 142ms (DB: 1) | 302 Found [http://localhost/items/new?v=1&u=http%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fproduct%2F1861978235%2Fref%3Ds9_sima_gw_s1_p14_i1%3Fpf_rd_m%3DA3P5ROKL5A1OLE%26pf_rd_s%3Dcenter-1%26pf_rd_r%3D01QAH6G2YG7YRZTNYWF0%26pf_rd_t%3D101%26pf_rd_p%3D467198433%26pf_rd_i%3D468294&t=Born%20to%20Run%3A%20The%20hidden%20tribe%2C%20the%20ultra-runners%2C%20and%20the%20greatest%20race%20the%20world%20has%20never%20seen%3A%20The%20Rise%20of%20Ultra-running%20and%20the%20Super-athlete%20Tribe%3A%20Amazon.co.uk%3A%20Christopher%20McDougall%3A%20Books&s=]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2009-09-20 20:37:07) [GET]
+  Parameters: {"id"=>"100"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 100 AND ("items".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering items/show
+Completed in 41ms (View: 11, DB: 1) | 200 OK [http://localhost/items/100]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-09-20 20:37:14) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+  [4;36;1mItem Update (0.4ms)[0m   [0;1mUPDATE "items" SET "updated_at" = '2009-09-20 19:37:14', "old" = 'f' WHERE "id" = 100[0m
+Rendering template within layouts/application
+Rendering items/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Rendered items/_item (7.8ms)
+Rendered items/_item (6.6ms)
+Completed in 49ms (View: 23, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#set_item_notes (for 127.0.0.1 at 2009-09-20 20:37:19) [POST]
+  Parameters: {"authenticity_token"=>"HdiRQCSPEoLjZCfW2G3JPwIAh0QN07n/WWrPDdeTeiQ=", "id"=>"100", "value"=>"This is a note", "_"=>"", "editorId"=>"item_notes_100_in_place_editor"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 100) [0m
+  [4;35;1mItem Update (0.5ms)[0m   [0mUPDATE "items" SET "updated_at" = '2009-09-20 19:37:19', "notes" = 'This is a note' WHERE "id" = 100[0m
+Completed in 34ms (View: 1, DB: 1) | 200 OK [http://localhost/items/set_item_notes/100]
+
+
+Processing ItemsController#delete (for 127.0.0.1 at 2009-09-20 20:37:28) [POST]
+  Parameters: {"authenticity_token"=>"HdiRQCSPEoLjZCfW2G3JPwIAh0QN07n/WWrPDdeTeiQ=", "id"=>"99", "_"=>""}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 99 AND ("items".user_id = 1)) [0m
+  [4;36;1mItem Destroy (0.7ms)[0m   [0;1mDELETE FROM "items" WHERE "id" = 99[0m
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items".user_id = 1) ORDER BY created_at ASC[0m
+Rendering items/delete
+Rendered items/_item (9.4ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "items" WHERE ("items".user_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "items" WHERE ("items"."old" = 't') AND ("items".user_id = 1) [0m
+Completed in 48ms (View: 14, DB: 3) | 200 OK [http://localhost/items/delete/99]

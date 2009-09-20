@@ -10,6 +10,20 @@
 </head>
 <body>
 
+<div id="header">
+	
+		<div id="logo">thirtydays.</div>
+	
+			<div id="login_logout">
+			<% if logged_in? %>
+				Welcome, <b><%= current_user.login.capitalize %> </b> | <%= link_to 'Logout', logout_path %>
+			<% else %>
+				No user currently logged in
+			<% end %>
+			</div>	
+	
+</div>
+
 <div id="content">
 	
 		<%= yield %>

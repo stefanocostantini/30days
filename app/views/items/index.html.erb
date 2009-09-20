@@ -1,23 +1,18 @@
-<div id="spacer"></div>
-
-<div id="header">
-	
-		<div id="logo">thirtydays.</div>
-	
-			<div id="login_logout">
-			<% if logged_in? %>
-				Welcome, <b><%= current_user.login.capitalize %> </b> | <%= link_to 'Logout', logout_path %>
-			<% else %>
-				No user currently logged in
-			<% end %>
-			</div>
-			
-		<div id="info">i</div>
+	<div id="message_board">
+	<span id="message">
+	<% if logged_in? %>
+		Your list contains <span id="total_items"><%=pluralize(total_items,"item")%></span>
+		(of which, <span id="old_items"><%=pluralize(old_items,"item")%></span> more than 30 days old)	
+	<% else %>
+		Please log in.
+	<% end %>
+	</span>
+	<span id="spinner"><%=image_tag 'ajax-loader.gif', :size => '18x18' %></span>
+	<span id="firefox_fix"></span>
 	
 	</div>
-	
-	
-		<div id="bookmarklet">Get the bookmarklet <%=image_tag 'arrow.png', :size => '30x10' %>
+
+<div id="bookmarklet">Get the bookmarklet <%=image_tag 'arrow.png', :size => '30x10' %>
 	  	<a href="javascript:var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='http://<%= request.host_with_port %>/items/new',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(d.title.replace(/^\s*|\s*$/g,''))%20+'&s='+e(s),u=f+p;try{if(!/^(.*\.)?instapaper([^.]*)?$/.test(l.host))throw(0);
 iptstbt();}catch(z){a =function(){if(!w.open(u,'t','toolbar=0,resizable=no,status=0,scrollbars=no,
 width=350,height=280'))l.href=u;};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);
@@ -26,20 +21,6 @@ else a();w.close();}ipr15();void(0)">
   	</a>
 	
 	</div>
-	
-	<div id="message_board">
-	<% if logged_in? %>
-		Your list contains <span id="total_items"><%=pluralize(total_items,"item")%></span>
-		(of which, <span id="old_items"><%=pluralize(old_items,"item")%></span> more than 30 days old)	
-	<% else %>
-		Please log in.
-	<% end %>
-	<span id="spinner"><%=image_tag 'ajax-loader.gif', :size => '18x18' %></span>
-	<span id="firefox_fix"></span>
-	
-	
-	</div>
-
 
 <div id="all_items">
 	
