@@ -4,12 +4,11 @@
 <div class="item">
 
 		<span id="item_data">
-		<%= @item.name %>
+		<%= @item.name %><span id="link"><%= link_to image_tag('link.png', :border => 'none', :size => '20x20', :title => 'Visit site (opens in a new page)'), "#{@item.url}", :popup => 'true' %></span>
 	
 		<span id="notes"><%= in_place_editor_field :item, 'notes' %> </span>
 
- 	
- 			<% if days < 1 %>
+ 			<span id="days"><% if days < 1 %>
 			
 				less than 1 day ago
 				
@@ -23,7 +22,7 @@
 				
 					<% if days >= 30 %>
 				
-						+30 days ago
+						more than 30 days ago
 					
 					<% else %>
 					
@@ -37,10 +36,12 @@
 			<% end %>
 		</span>
 
-		<div class="status">
+	
 		
 		<span class="delete"><%= link_to_remote image_tag('closebox.png', :border => 'none', :size => '25x25', :title => 'Delete item'), :url => {:controller => 'items', :action => 'delete', :id => @item.id}, :loading => "Element.hide('firefox_fix')", :complete => "Element.show('firefox_fix')" %></span>
 			
+		<div class="status">
+		
 			<% if days >= 30 %>
 				<span id="traffic_light" class="red"></span>
 			<% else %>
@@ -53,13 +54,6 @@
 				
 			<% end %>
 		
-		
-																
-			
-		
-		
-		<span id="link"><%= link_to image_tag('link.png', :border => 'none', :size => '20x20', :title => 'Visit site (opens in a new page)'), "#{@item.url}", :popup => 'true' %></span>
-
 		</div>
 
 		
