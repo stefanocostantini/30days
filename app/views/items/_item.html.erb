@@ -1,7 +1,7 @@
 <% @item = item %>
 
 
-<div class="item">
+<div id="item">
 
 		<span id="item_data">
 		<%= @item.name %><span id="link"><%= link_to image_tag('link.png', :border => 'none', :size => '20x20', :title => 'Visit site (opens in a new page)'), "#{@item.url}", :popup => 'true' %></span>
